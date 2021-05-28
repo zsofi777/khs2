@@ -94,7 +94,7 @@ body.royal_preloader {
     bottom: -2px;
     left: -2px;
     border: 4px solid transparent;
-    border-left-color: #ECE7DDECE7DD;
+    border-left-color: #ECE7DD;
     border-radius: 50%;
     -webkit-animation: rotate 0.8s linear infinite;
        -moz-animation: rotate 0.8s linear infinite;
@@ -121,7 +121,7 @@ body.royal_preloader {
 /* Text Mode */
 
 #royal_preloader.royal_preloader_text .royal_preloader_loader {
-    color: #ECE7DDECE7DD;
+    color: #ECE7DD;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -149,7 +149,7 @@ body.royal_preloader {
 /* Scale Text Mode */
 
 #royal_preloader.royal_preloader_scale_text .royal_preloader_loader {
-    color: #ECE7DDECE7DD;
+    color: #ECE7DD;
     position: absolute;
 	font-family: 'Roboto', sans-serif;
     top: 0;
@@ -287,7 +287,7 @@ body.royal_preloader {
 }
 @-o-keyframes scale {
     0% { -o-transform: scale(0); opacity: 0;}
-    50% { -o-transform: scale(2); opacity: 0;.5}
+    50% { -o-transform: scale(2); opacity: 0.5}
     100% { -o-transform: scale(1); opacity: 1;}
 }
 @keyframes scale {
@@ -405,14 +405,14 @@ body.royal_preloader {
 	display:block;
 }
 .cbp-af-header.cbp-af-header-shrink .logo #khsLogo{
-	content: url(/images/logos/logoKHS2.png);
+	content: url(../images/logos/logoKHS2.png);
 	--webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
 .cbp-af-header.cbp-af-header-shrink .logo #nskiLogo{
-	content: url(/images/logos/logoNSKI2.png);
+	content: url(../images/logos/logoNSKI2.png);
 	--webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -3951,7 +3951,7 @@ i.jstree-icon.jstree-themeicon {
 	float: right;
 }
 .parallax-home.aktualitasok {
-    background: url(/images/bgAktualitasok.png) no-repeat fixed;
+    background: url(../images/bgAktualitasok.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -3962,7 +3962,7 @@ i.jstree-icon.jstree-themeicon {
     width: 100%;
 }
 .parallax-project.aktualitasok {
-    background: url(/images/bgAktualitasok.png) no-repeat fixed;
+    background: url(../images/bgAktualitasok.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -3977,7 +3977,7 @@ i.jstree-icon.jstree-themeicon {
     letter-spacing: 5.5px;
 } 
 .parallax-home.terkepek {
-    background: url(/images/bgTerkepek.png) no-repeat fixed;
+    background: url(../images/bgTerkepek.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -3988,7 +3988,7 @@ i.jstree-icon.jstree-themeicon {
     width: 100%;
 }
 .parallax-project.terkepek {
-    background: url(/images/bgTerkepek.png) no-repeat fixed;
+    background: url(../images/bgTerkepek.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4003,7 +4003,7 @@ i.jstree-icon.jstree-themeicon {
     letter-spacing: 5.5px;
 } 
 .parallax-home.kimutatasok {
-    background: url(/images/bgKimutatasok.png) no-repeat fixed;
+    background: url(../images/bgKimutatasok.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4014,7 +4014,7 @@ i.jstree-icon.jstree-themeicon {
     width: 100%;
 }
 .parallax-project.kimutatasok {
-    background: url(/images/bgKimutatasok.png) no-repeat fixed;
+    background: url(../images/bgKimutatasok.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4029,7 +4029,7 @@ i.jstree-icon.jstree-themeicon {
     letter-spacing: 5.5px;
 } 
 .parallax-home.meta {
-    background: url(/images/bgMeta.png) no-repeat fixed;
+    background: url(../images/bgMeta.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4040,7 +4040,7 @@ i.jstree-icon.jstree-themeicon {
     width: 100%;
 }
 .parallax-project.meta {
-    background: url(/images/bgMeta.png) no-repeat fixed;
+    background: url(../images/bgMeta.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4055,7 +4055,7 @@ i.jstree-icon.jstree-themeicon {
     letter-spacing: 5.5px;
 } 
 .parallax-home.gyorsjelentesek {
-    background: url(/images/bgGyorsjelentesek.png) no-repeat fixed;
+    background: url(../images/bgGyorsjelentesek.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4066,7 +4066,7 @@ i.jstree-icon.jstree-themeicon {
     width: 100%;
 }
 .parallax-home.tanulmanyok {
-    background: url(/images/bgTanulmanyok.png) no-repeat fixed;
+    background: url(../images/bgTanulmanyok.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -4077,7 +4077,7 @@ i.jstree-icon.jstree-themeicon {
     width: 100%;
 }
 .parallax-home.index {
-    background: url(/images/bgIndex.png) no-repeat fixed;
+    background: url(../images/bgIndex.png) no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
