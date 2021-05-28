@@ -1,0 +1,6 @@
+revealAnimation-small.js
+revealAnimation-aktualitasok.js
+revealAnimation-kimutatasok.js
+revealAnimation-meta.js
+revealAnimation-terkepek.js
+custom-home.js

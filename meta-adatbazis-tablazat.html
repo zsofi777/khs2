@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>KÁRPÁT-HAZA STATISZTIKÁK</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/et-line.css"/>
+	<link rel="stylesheet" href="css/ionicons.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/owl.transitions.css"/>
+	<link rel="stylesheet" href="css/retina.css"/>
+	<link rel="stylesheet" href="css/min.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	
+	<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+	
+	<style>
+		@media (max-width: 767px) {
+			div.dataTables_wrapper div.dataTables_info {
+				padding-top: 1.85em;
+				padding-bottom: 1.85em;
+			}
+			.paginate_button {
+				padding: 8px 7px !important;
+			}
+		}
+		#example_wrapper {
+			padding: 30px 10px;;
+		}	
+		table th.big-col {
+			font-weight: 600;
+			font-size: 13px;
+		}
+		tfoot th {
+			font-weight: 600;
+			font-size: 13px;
+		}
+		td.dt-nowrap { 
+			white-space: nowrap; 
+		} 
+		table th.noFilterhead:nth-child(1) {
+			color: #fff;
+		}
+		table tr:hover th.noFilterhead:nth-child(1) {
+			color: #a5b4c8 !important;
+		}
+		table th.noFilterhead:nth-child(7) {
+			color: #fff;
+		}
+		table tr:hover th.noFilterhead:nth-child(7) {
+			color: #a5b4c8 !important;
+		}
+		table th.noFilterhead:nth-child(17) {
+			color: #fff;
+		}
+		table tr:hover th.noFilterhead:nth-child(17) {
+			color: #a5b4c8 !important;
+		}
+		table th.col:nth-child(1) {
+			color: #fff;
+		}
+		table tr:hover th.col:nth-child(1) {
+			color: #a5b4c8 !important;
+		}
+		table th.col:nth-child(7) {
+			color: #fff;
+		}
+		table tr:hover th.col:nth-child(7) {
+			color: #a5b4c8 !important;
+		}
+		table th.col:nth-child(17) {
+			color: #fff;
+		}
+		table tr:hover th.col:nth-child(17) {
+			color: #a5b4c8 !important;
+		}
+		table tr:hover {
+			background-color: #a5b4c8 !important;
+		}
+		.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+			border-bottom-width: 0px;
+		}
+		.dataTables_filter button#search {
+			padding: 8px;
+			border-radius: 6px;
+			border-width: 1px;
+			border-color: #a9b9d0;
+			border-style: solid;
+			background: #dae3f3;
+			margin-left: 0.5%;
+			width: 24%;
+		}
+		.dataTables_filter button#search:hover {
+			background: #ccd6e7;
+			color: #4B7793;
+		}
+		.dataTables_filter button#clear {
+			padding: 8px;
+			border-radius: 6px;
+			border-width: 1px;
+			border-color: #a9b9d0;
+			border-style: solid;
+			background: #8398b3ba;
+			margin-left: 0.5%;
+			width: 24%;
+		}	
+		.dataTables_filter button#clear:hover {
+			background: #5f748fba;
+			color: #4B7793;
+		}
+		.dataTables_filter button:focus {
+			outline: 0px auto #a9b9d0;
+			background: #a9b9d0;
+		}
+		.dataTables_filter input {
+			margin-left: 5px;
+			padding: 10px;
+			border-radius: 6px;
+			border-width: 1px;
+			border-color: #dae3f3;
+			border-style: solid;
+		}
+		div.dataTables_wrapper div.dataTables_length select {
+			margin-left: 4px;
+		}
+		div.dataTables_wrapper div.dataTables_filter label {
+			font-weight: 600 !important;
+		}
+		:focus {
+			outline: white auto 1px;
+		}
+		.table th, .table td {
+			vertical-align: middle;
+			padding: 0.5rem;
+		}
+		thead input {
+			font-weight: 500;
+		}
+		input {
+			border-style: solid;
+			border-color: #ddd;
+			border-width: 1px;
+			border-radius: 2px;
+		}
+		select {
+			border-style: solid;
+			border-color: #ddd;
+			border-width: 1px;
+			border-radius: 2px;
+		}
+		.paginate_button {
+			border-radius: 6px;
+			cursor: pointer;
+			position: relative;
+			color: #b5c6df;
+			text-decoration: none;
+			background-color: #fff;
+			border: 1px solid #a9b9d0;
+			text-decoration: none;
+			padding: 8px 16px;
+			margin: 0 3px;
+		}
+		.paginate_button.disabled{
+			color: #bfc0c1;
+			pointer-events: none;
+			background-color: #fff;
+			border-color: #dae3f3;
+		}
+		.paginate_button:hover {
+			text-decoration: none;
+			color: #4B7793;
+		}
+		.table-striped tbody tr:nth-of-type(odd) {
+			background-color: #dae3f3;
+		}
+		#example_processing{
+			margin-top: 7%;
+			font-weight: bold;
+			font-size: 24px;
+			color: #b2c9f3;
+			font-family: 'Roboto', sans-serif;
+		}
+		.toolbar {
+			float: right;
+		}
+		.table-striped tbody tr:nth-of-type(odd) {
+			background: #dbdee2;	    
+		}    
+		div.dt-buttons {
+			float: right;
+			margin-left: 10px;
+		}
+		.dataTables_length select {
+			padding: 8px;
+			border-radius: 6px;
+			border-width: 1px;
+			border-color: #dae3f3;
+			border-style: solid;
+		}
+	</style>
+	
+</head>
+<body class="royal_preloader">	
+	
+	<div id="royal_preloader"></div>
+	
+	
+	<!-- MENU
+    ================================================== -->	
+
+	<nav id="menu-wrap" class="menu-back cbp-af-header light cbp-af-header-shrink"> <!-- fixed container --> <!-- ADD CLASS LIGHT ON FIXED CONTAINER TO CHANGE IT TO LIGHT SCHEME -->
+		<div class="menu-container">
+			<div class="logo light"><a href="index.html"><img id="khsLogo" src="images/logos/logo.png" alt=""></a></div>
+				<div class="logo light nskilogo"><a href="http://nski.hu/" target="_blank"><img id="nskiLogo" src="images/logos/logoNSKI.png" alt=""></a></div> <!-- logo in absolute position --> <!-- ADD CLASS LIGHT ON LOGO TO CHANGE LOGO FOR LIGHT SCHEME -->
+			<div class="menu light"> <!-- menu start --> <!-- ADD CLASS LIGHT ON MENU TO CHANGE MENU TO LIGHT SCHEME -->
+				<ul> 
+					<li>
+						<a href="aktualitasok.html">Aktualitások</a> <!-- main links -->
+					</li>
+					<li> 
+						<a href="terkepek.html">Térképek</a> <!-- main links -->
+						<ul class="normal-sub">
+							<li><a href="terkepek.html#demografia">DEMOGRÁFIA</a></li>
+							<li><a href="terkepek.html#gazdasag">GAZDASÁG</a></li>
+							<li><a href="terkepek.html#kozneveles">KÖZNEVELÉS</a></li>
+							<li><a href="terkepek.html#egeszsegugy">EGÉSZSÉGÜGY</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="kimutatasok.html">Kimutatások</a> <!-- main links -->
+					</li>
+					<li> 
+						<a href="meta-adatbazis.html">Meta-adatbázis</a> <!-- main links -->
+						<ul class="normal-sub">
+							<li><a href="meta-adatbazis-mutatok-szerint.html">MUTATÓK SZERINT</a></li>
+							<li><a href="meta-adatbazis-orszagok-szerint.html">ORSZÁGOK SZERINT</a></li>
+							<li><a href="meta-adatbazis-teruleti-szint-szerint.html">TERÜLETI SZINTEK SZERINT</a></li>
+							<li><a href="meta-adatbazis-tablazat.html" class="current-multi-page">TÁBLÁZATOS FORMÁBAN</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="gyorsjelentesek.html">Gyorsjelentések</a> <!-- main links -->
+					</li>
+					<li>
+						<a href="tanulmanyok.html">Tanulmányok</a> <!-- main links -->
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>	
+
+	<!-- END MENU
+    ================================================== -->
+	
+	<!-- Primary Page Layout
+	================================================== -->
+	
+	<div class="section padding-top-bottom back-white" style="padding-bottom: 0; height: calc(100vh); overflow-x: scroll;">
+		<table id="example" class="table table-striped table-bordered" style="width:100%">
+			<thead>
+				<tr>
+					<th class="big-col">AZONOSÍTÓ</th>
+					<th class="big-col">ORSZÁG</th>
+					<th class="big-col">KATEGÓRIA 1.</th>
+					<th class="big-col">KATEGÓRIA 2.</th>
+					<th class="big-col">KATEGÓRIA 3.</th>
+					<th class="big-col">MUTATÓ</th>
+					<th class="big-col">MUTATÓ ALKATEGÓRIA</th>
+					<th class="big-col">MÉRTÉKEGYSÉG</th>
+					<th class="big-col">KEZDŐÉV</th>
+					<th class="big-col">ZÁRÓÉV</th>
+					<th class="big-col">LAU2 (5.szint)</th>
+					<th class="big-col">LAU1 (4. szint)</th>
+					<th class="big-col">NUTS3 (3. szint)</th>
+					<th class="big-col">NUTS2 (2. szint)</th>
+					<th class="big-col">NUTS0 (1. szint)</th>
+					<th class="big-col">ADATFORRÁS</th>
+				</tr>
+				<tr>
+					<th class="noFilterhead">AZONOSÍTÓ</th>
+					<th class="filterhead">ORSZÁG</th>
+					<th class="filterhead">KATEGÓRIA 1.</th>
+					<th class="filterhead">KATEGÓRIA 2.</th>
+					<th class="filterhead">KATEGÓRIA 3.</th>
+					<th class="filterhead">MUTATÓ</th>
+					<th class="noFilterhead">MUTATÓ ALKATEGÓRIA</th>
+					<th class="filterhead">MÉRTÉKEGYSÉG</th>
+					<th class="filterhead">KEZDŐÉV</th>
+					<th class="filterhead">ZÁRÓÉV</th>
+					<th class="filterhead">LAU2 (5.szint)</th>
+					<th class="filterhead">LAU1 (4. szint)</th>
+					<th class="filterhead">NUTS3 (3. szint)</th>
+					<th class="filterhead">NUTS2 (2. szint)</th>
+					<th class="filterhead">NUTS0 (1. szint)</th>
+					<th class="filterhead">ADATFORRÁS</th>
+				</tr>					
+				<tr>
+					<th class="col">AZONOSÍTÓ</th>
+					<th class="col">ORSZÁG</th>
+					<th class="col">KATEGÓRIA 1.</th>
+					<th class="col">KATEGÓRIA 2.</th>
+					<th class="col">KATEGÓRIA 3.</th>
+					<th class="col">MUTATÓ</th>
+					<th class="col">MUTATÓ ALKATEGÓRIA</th>
+					<th class="col">MÉRTÉKEGYSÉG</th>
+					<th class="col">KEZDŐÉV</th>
+					<th class="col">ZÁRÓÉV</th>
+					<th class="col">LAU2 (5.szint)</th>
+					<th class="col">LAU1 (4. szint)</th>
+					<th class="col">NUTS3 (3. szint)</th>
+					<th class="col">NUTS2 (2. szint)</th>
+					<th class="col">NUTS0 (1. szint)</th>
+					<th class="col">ADATFORRÁS</th>
+				</tr>				
+			</thead>
+			<tfoot>
+				<tr>
+					<th>AZONOSÍTÓ</th>
+					<th>ORSZÁG</th>
+					<th>KATEGÓRIA 1.</th>
+					<th>KATEGÓRIA 2.</th>
+					<th>KATEGÓRIA 3.</th>
+					<th>MUTATÓ</th>
+					<th>MUTATÓ ALKATEGÓRIA</th>
+					<th>MÉRTÉKEGYSÉG</th>
+					<th>KEZDŐÉV</th>
+					<th>ZÁRÓÉV</th>
+					<th>LAU2 (5.szint)</th>
+					<th>LAU1 (4. szint)</th>
+					<th>NUTS3 (3. szint)</th>
+					<th>NUTS2 (2. szint)</th>
+					<th>NUTS0 (1. szint)</th>
+					<th>ADATFORRÁS</th>
+				</tr>
+			</tfoot>		
+		</table>
+	</div>			
+
+	<div class="scroll-to-top tipped" data-title="top"  data-tipper-options='{"direction":"bottom","follow":"true","margin":35}'></div>
+	
+		
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery.js"></script>	
+<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+	//Preloader
+
+	Royal_Preloader.config({
+        mode:        'progress',
+		background     : '#FFFFFF',
+		showProgress   : true,
+		showPercentage : false
+	});
+})(jQuery);
+</script> 
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/scrolltoid.js"></script> 
+<script type="text/javascript" src="js/owlCarousel.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script> 
+<script type="text/javascript" src="js/tipper.js"></script>
+<script type="text/javascript" src="js/classie.js"></script> 
+<script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+<script type="text/javascript" src="js/scrollReveal.js"></script>	
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script type="text/javascript" src="js/scrollMonitor.js"></script>
+<script type="text/javascript" src="js/main-scroll-effect.js"></script>
+
+<script type="text/javascript" src="js/custom-home.js"></script>  
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>						
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+<script src="js/database.js"></script>
+
+<script src="js/cookie.notice.min.js"></script><!-- End Document
+================================================== -->
+</body>
+</html>
