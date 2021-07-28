@@ -80,7 +80,36 @@
 								contentEl.style.opacity = 1;
 							}
 						}
-					})				
+					}),
+					scrollElemToWatch_6 = document.getElementById('rev-6'),
+					watcher_6 = scrollMonitor.create(scrollElemToWatch_6, -300),
+					rev6 = new RevealFx(scrollElemToWatch_6, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev7 = new RevealFx(document.querySelector('#rev-7'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev8 = new RevealFx(document.querySelector('#rev-8'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					})					
 					
 				watcher_3.enterViewport(function() {
 					rev3.reveal();
@@ -93,6 +122,12 @@
 				watcher_5.enterViewport(function() {
 					rev5.reveal();
 					watcher_5.destroy();
+				});	
+				watcher_6.enterViewport(function() {
+					rev6.reveal();
+					rev7.reveal();
+					rev8.reveal();
+					watcher_6.destroy();
 				});		
 			}
 		})();
