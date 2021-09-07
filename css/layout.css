@@ -3077,7 +3077,7 @@ figure.vimeo a img, figure.youtube a img {
 .scroll-to-top {
 	position: fixed;
 	cursor: pointer;
-	top: 120px;
+	bottom: 40px;
 	opacity:.6;
 	right: 40px;
 	width:30px;
