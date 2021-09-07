@@ -109,7 +109,123 @@
 								contentEl.style.opacity = 1;
 							}
 						}
-					})					
+					}),	
+					scrollElemToWatch_9 = document.getElementById('rev-9'),
+					watcher_9 = scrollMonitor.create(scrollElemToWatch_9, -300),
+					rev9 = new RevealFx(scrollElemToWatch_9, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev10 = new RevealFx(document.querySelector('#rev-10'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev11 = new RevealFx(document.querySelector('#rev-11'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_12 = document.getElementById('rev-12'),
+					watcher_12 = scrollMonitor.create(scrollElemToWatch_12, -300),
+					rev12 = new RevealFx(scrollElemToWatch_12, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev13 = new RevealFx(document.querySelector('#rev-13'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev14 = new RevealFx(document.querySelector('#rev-14'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_15 = document.getElementById('rev-15'),
+					watcher_15 = scrollMonitor.create(scrollElemToWatch_15, -300),
+					rev15 = new RevealFx(scrollElemToWatch_15, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev16 = new RevealFx(document.querySelector('#rev-16'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev17 = new RevealFx(document.querySelector('#rev-17'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_18 = document.getElementById('rev-18'),
+					watcher_18 = scrollMonitor.create(scrollElemToWatch_18, -300),
+					rev18 = new RevealFx(scrollElemToWatch_18, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev19 = new RevealFx(document.querySelector('#rev-19'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev20 = new RevealFx(document.querySelector('#rev-20'), {
+						revealSettings : {
+							bgcolor: '#838D92',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					})	
 					
 				watcher_3.enterViewport(function() {
 					rev3.reveal();
@@ -128,7 +244,31 @@
 					rev7.reveal();
 					rev8.reveal();
 					watcher_6.destroy();
-				});		
+				});	
+				watcher_9.enterViewport(function() {
+					rev9.reveal();
+					rev10.reveal();
+					rev11.reveal();
+					watcher_9.destroy();
+				});
+				watcher_12.enterViewport(function() {
+					rev12.reveal();
+					rev13.reveal();
+					rev14.reveal();
+					watcher_12.destroy();
+				});	
+				watcher_15.enterViewport(function() {
+					rev15.reveal();
+					rev16.reveal();
+					rev17.reveal();
+					watcher_15.destroy();
+				});	
+				watcher_18.enterViewport(function() {
+					rev18.reveal();
+					rev19.reveal();
+					rev20.reveal();
+					watcher_18.destroy();
+				});					
 			}
 		})();
 		
