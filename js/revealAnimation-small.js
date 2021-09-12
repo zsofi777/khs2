@@ -27,7 +27,7 @@
 				
 				var rev1 = new RevealFx(document.querySelector('#rev-load-1'), {
 					revealSettings : {
-						bgcolor: '#987033',
+						bgcolor: '#838D92',
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;
 						}
@@ -37,7 +37,7 @@
 
 				var rev2 = new RevealFx(document.querySelector('#rev-load-2'), {
 					revealSettings : {
-						bgcolor: '#838D92',
+						bgcolor: '#B79B70',
 						delay: 250,
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;

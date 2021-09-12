@@ -27,7 +27,7 @@
 				
 				var rev1 = new RevealFx(document.querySelector('#rev-load-1'), {
 					revealSettings : {
-						bgcolor: '#987033',
+						bgcolor: '#838D92',
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;
 						}
@@ -37,7 +37,7 @@
 
 				var rev2 = new RevealFx(document.querySelector('#rev-load-2'), {
 					revealSettings : {
-						bgcolor: '#838D92',
+						bgcolor: '#B79B70',
 						delay: 250,
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;
@@ -52,7 +52,7 @@
 						watcher_0 = scrollMonitor.create(scrollElemToWatch_0, -100),
 						rev0 = new RevealFx(scrollElemToWatch_0, {
 							revealSettings : {
-								bgcolor: '#987033',
+								bgcolor: '#838D92',
 								direction: 'rl',
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -63,7 +63,7 @@
 					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
 					rev1 = new RevealFx(scrollElemToWatch_1, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -72,7 +72,7 @@
 					}),
 					rev2 = new RevealFx(document.querySelector('#rev-2'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#4B7793',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -81,7 +81,7 @@
 					}),
 					rev3 = new RevealFx(document.querySelector('#rev-3'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#B79B70',
 							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -93,7 +93,7 @@
 					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -300),
 					rev4 = new RevealFx(scrollElemToWatch_2, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -102,7 +102,7 @@
 					}),
 					rev5 = new RevealFx(document.querySelector('#rev-5'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#4B7793',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -111,7 +111,7 @@
 					}),
 					rev6 = new RevealFx(document.querySelector('#rev-6'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#B79B70',
 							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -123,7 +123,7 @@
 					watcher_3 = scrollMonitor.create(scrollElemToWatch_3, -300),
 					rev7 = new RevealFx(scrollElemToWatch_3, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -132,7 +132,7 @@
 					}),
 					rev8 = new RevealFx(document.querySelector('#rev-8'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#4B7793',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -141,7 +141,7 @@
 					}),
 					rev9 = new RevealFx(document.querySelector('#rev-9'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#B79B70',
 							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -153,7 +153,7 @@
 					watcher_4 = scrollMonitor.create(scrollElemToWatch_4, -300),
 					rev10 = new RevealFx(scrollElemToWatch_4, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -162,7 +162,7 @@
 					}),
 					rev11 = new RevealFx(document.querySelector('#rev-11'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#4B7793',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -171,7 +171,7 @@
 					}),
 					rev12 = new RevealFx(document.querySelector('#rev-12'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#B79B70',
 							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -183,7 +183,7 @@
 					watcher_5 = scrollMonitor.create(scrollElemToWatch_5, -300),
 					rev13 = new RevealFx(scrollElemToWatch_5, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -192,7 +192,7 @@
 					}),
 					rev14 = new RevealFx(document.querySelector('#rev-14'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#4B7793',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -201,7 +201,7 @@
 					}),
 					rev15 = new RevealFx(document.querySelector('#rev-15'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#B79B70',
 							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -213,7 +213,7 @@
 					watcher_6 = scrollMonitor.create(scrollElemToWatch_6, -300),
 					rev16 = new RevealFx(scrollElemToWatch_6, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -222,7 +222,7 @@
 					}),
 					rev17 = new RevealFx(document.querySelector('#rev-17'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#4B7793',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -231,7 +231,7 @@
 					}),
 					rev18 = new RevealFx(document.querySelector('#rev-18'), {
 						revealSettings : {
-							bgcolor: '#838D92',
+							bgcolor: '#B79B70',
 							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;

@@ -27,7 +27,8 @@
 				
 				var rev1 = new RevealFx(document.querySelector('#rev-load-1'), {
 					revealSettings : {
-						bgcolor: '#987033',
+						bgcolor: '#838D92',
+						delay: 550,
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;
 						}
@@ -37,9 +38,8 @@
 
 				var rev2 = new RevealFx(document.querySelector('#rev-load-2'), {
 					revealSettings : {
-						bgcolor: '#838D92',
-						direction: 'rl',
-						delay: 150,
+						bgcolor: '#B79B70',
+						delay: 650,
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;
 						}
@@ -51,10 +51,10 @@
 				//************************ reveal on scroll ********************************
 				
 				var scrollElemToWatch_1 = document.getElementById('rev-1'),
-					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),				
+					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
 					rev1 = new RevealFx(scrollElemToWatch_1, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -65,12 +65,7 @@
 				watcher_1.enterViewport(function() {
 					rev1.reveal();
 					watcher_1.destroy();
-				});
-				
-				
-
-
-
+				});				
 			}
 		})();
 		

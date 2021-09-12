@@ -313,7 +313,7 @@ body.royal_preloader {
 	height:50vh;
 }
 .padding-top-bottom{
-	padding-top:120px;
+	padding-top:0px;
 	padding-bottom:120px;
 }
 .padding-top{
@@ -329,13 +329,13 @@ body.royal_preloader {
 	background-color:#ECE7DD;
 }
 .back-grey{
-	background-color:#f5f5f5;
+	background-color:#ECE7DD;
 }
 .back-black{
 	background-color:#1B1D19;
 }
 .back-dark{
-	background-color:#212121;
+	background-color:#1B1D19;
 }
 .img-wrap img{
 	width:100%;
@@ -479,7 +479,7 @@ body.royal_preloader {
 	position:absolute;
 	height:100px;
 	z-index:10000;
-	top:12px;
+	top:0px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -524,7 +524,7 @@ body.royal_preloader {
     cursor: pointer;
     float: right;
     padding: 8px 12px;
-    background: #212121;
+    background: #1B1D19;
     color: #ECE7DD;
 	margin-top:5px;
 }
@@ -536,7 +536,7 @@ body.royal_preloader {
     float: right;
 	top:-2px;
     padding: 6px 10px;
-    background: #212121;
+    background: #1B1D19;
     color: #ECE7DD;
 }
 
@@ -583,12 +583,12 @@ body.royal_preloader {
 
 .menu > ul > li a {
     text-decoration: none;
-    padding: 15px 13px;
-	padding-top:80px;
+    padding: 36px 13px;
+	padding-top:45px;
     display: block;
 	font-family: 'Roboto', sans-serif;
 	font-weight:600;
-	font-size: 14px;
+	font-size: 17px;
 	line-height:18px;
 	letter-spacing:0px;
 	color:#ECE7DD;
@@ -623,7 +623,7 @@ body.royal_preloader {
 }
 .menu > ul > li > ul {
     width: 100%;
-    background: #111;
+    background: #1B1D19;
     padding: 30px 30px;
     position: absolute;
     z-index: -20;
@@ -718,7 +718,7 @@ body.royal_preloader {
 	color:#c5c5c5;
 	font-family: 'Roboto', sans-serif;
 	font-weight:500;
-	font-size: 10px;
+	font-size: 12px;
 	line-height:18px;
 	letter-spacing:2px;
 	text-transform:uppercase;
@@ -832,7 +832,7 @@ body.royal_preloader {
 	z-index:20;
     width: 240px;
     padding: 10px 20px;
-    background: #111;
+    background: #1B1D19;
 }
 .menu > ul > li > ul.normal-sub > li ul.go-right {
     display: none;
@@ -842,7 +842,7 @@ body.royal_preloader {
 	z-index:20;
     width: 240px;
     padding: 10px 20px;
-    background: #111;
+    background: #1B1D19;
 }
 .menu > ul > li > ul.normal-sub > li ul.go-left li,
 .menu > ul > li > ul.normal-sub > li ul.go-right li {
@@ -920,11 +920,11 @@ iframe{
 ================================================== */
 
 .menu-back.light{
-	background: rgba(255,255,255,0);
+	background: #ece7ddb5;
 	border-bottom:1px solid rgba(130,130,130,0);
 }
 .cbp-af-header.light.cbp-af-header-shrink {
-	background: #ECE7DD;
+	background: #ece7ddb5;
 	border-bottom:1px solid #987033;
 }
 .cbp-af-header.cbp-af-header-shrink .logo.light,
@@ -967,13 +967,13 @@ iframe{
 ul.tabs.light li{
 	color: #1B1D19;
 	border-right:1px solid #dbdbdb;
-	background-color:#f0f0f0;
+	background-color:#ece7dd;
 }
 ul.tabs.light li:hover,
 ul.tabs.light li.current,
 .tab-content.light,
 .menu.light .form-section{
-	background-color:#f9f9f9;
+	background-color:#ece7dd;
 }
 .menu.light .marquee span {
 	color: #999;
@@ -1125,7 +1125,7 @@ ul.tabs.light li.current,
 .page-center-wrap .home-big-text{
 	display:inline-block;
     font-family: 'Roboto', sans-serif;
-	font-size: 90px;
+	font-size: 80px;
 	font-weight: 600;
 	letter-spacing: -6.5px;
 	line-height:160px;
@@ -1143,7 +1143,7 @@ ul.tabs.light li.current,
 	font-family: 'Roboto', sans-serif;
 	font-size: 19px;
 	line-height:25px;
-	font-weight:400;
+	font-weight:600;
 	letter-spacing: 7.5px;
 	color:#1B1D19;
 	margin:0 auto;
@@ -1221,7 +1221,7 @@ ul.tabs.light li.current,
 	transform: translateY(-50%);
 }
 #owl-home.owl-theme .owl-controls .owl-page span{
-	background:#212121;
+	background:#1B1D19;
 	border-radius:50%;
 	width:4px;
 	height:4px;
@@ -1281,7 +1281,7 @@ ul.tabs.light li.current,
 	font-weight:400;
 	line-height:22px;
 	letter-spacing:2px;
-	color:#212121;
+	color:#1B1D19;
 }
 .case-study-wrapper li a span {
 	font-size:13px;
@@ -1373,7 +1373,7 @@ ul.tabs.light li.current,
 .home-text h1{
 	font-size: 62px;
 	line-height:76px;
-	color:#212121;
+	color:#1B1D19;
 	text-align:left;
 	display:inline-block;
 }
@@ -1672,7 +1672,7 @@ xtype
 	font-size: 18px; 
 	line-height: 22px;
 	text-align:left;
-	color:#212121;
+	color:#1B1D19;
 	padding-bottom:5px;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
@@ -1700,7 +1700,7 @@ xtype
 }
 .portfolio-box-1 .work-subtitle{
 	position:relative;
-	font-size: 13px;
+	font-size: 17px;
 	line-height: 15px;
 	letter-spacing:2px;
 	font-family: 'Roboto', sans-serif;
@@ -1747,11 +1747,11 @@ xtype
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	font-size: 12px; 
+	font-size: 20px; 
 	line-height: 12px; 
 	text-align: center;
 	outline: none;
-	color: #212121;
+	color: #1B1D19;
 	border-radius:30px;
 	border:2px solid transparent;
 	font-family: 'Roboto', sans-serif;
@@ -1804,7 +1804,7 @@ xtype
 	display:inline-block;
 	float:left;
 	text-align:left;
-	color: #212121;
+	color: #1B1D19;
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
 	font-size: 24px; 
@@ -1847,7 +1847,7 @@ xtype
 	display:inline-block;
 	float:right;
 	text-align:right;
-	color: #212121;
+	color: #1B1D19;
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
 	font-size: 24px; 
@@ -1929,7 +1929,7 @@ h6:before{
 	text-align:left;
 	font-family: 'Roboto', sans-serif;
 	font-weight:600;
-	font-size: 19px;
+	font-size: 22px;
 	line-height:24px;
 }
 
@@ -2048,7 +2048,7 @@ h6:before{
 }
 .quote p{
 	text-align:left;
-	color: #212121;
+	color: #1B1D19;
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
 	font-size: 16px; 
@@ -2228,7 +2228,7 @@ figure.vimeo a:after, figure.youtube a:after {
     transition: all 300ms linear; 
 }
 figure.vimeo:hover a:after, figure.youtube:hover a:after {
-	background:#212121;
+	background:#1B1D19;
 	-webkit-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
 	box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
@@ -2289,10 +2289,11 @@ figure.vimeo a img, figure.youtube a img {
 }
 .post-wrapper p.larger{
 	text-align:justify;
-	font-size: 18px;
+	font-size: 17px;
 	line-height:24px;
 	font-style: italic;
 	color: #353C44;
+	font-weight: 600;
 }
 .post-wrapper p{
 	text-align:justify;
@@ -2392,7 +2393,7 @@ figure.vimeo a img, figure.youtube a img {
 	position:relative;
 	display:block;
 	width:100%;
-	color: #212121;
+	color: #1B1D19;
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
 	text-align:left;
@@ -2454,7 +2455,7 @@ figure.vimeo a img, figure.youtube a img {
 	font-size: 15px;
 	line-height:22px;
 	font-weight:600;
-	color:#212121;
+	color:#1B1D19;
 	text-align:left;
 	letter-spacing:1px;
     -webkit-transition: all 300ms linear;
@@ -2722,7 +2723,7 @@ figure.vimeo a img, figure.youtube a img {
 	color:#636363;
 }
 #ajaxsuccess {
-	background: #f2f2f2;
+	background: #ece7dd;
 	color:#101010;
 	font: 20px/60px 'Roboto', sans-serif;
 	height:60px;
@@ -3005,7 +3006,7 @@ figure.vimeo a img, figure.youtube a img {
 .logo-text-footer{
 	position:relative;
     font-family: 'Roboto', sans-serif;
-	font-size: 38px;
+	font-size: 17px;
 	line-height:38px;
 	text-align:left;
     -webkit-transition: all 300ms linear;
@@ -3424,13 +3425,13 @@ Menu Mobile style's
 	ul.tabs.light li{
 		color: #1B1D19;
 		border-right:1px solid #dbdbdb;
-		background-color:#f0f0f0;
+		background-color:#ece7dd;
 	}
 	ul.tabs.light li:hover,
 	ul.tabs.light li.current,
 	.tab-content.light,
 	.menu.light .form-section{
-		background-color:#f9f9f9;
+		background-color:#ece7dd;
 	}
 	ul.tabs.light li{
 		border-bottom:1px solid rgba(120,120,120,.1);;
@@ -4092,6 +4093,34 @@ i.jstree-icon.jstree-themeicon {
 	text-align: center !important;
 }
 
+.content__image-wrap {
+	margin-top: 25px;
+}
+
+.menu.light > ul > li a {
+    position: relative !important;
+}
+.menu.light > ul > li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.menu.light > ul > li a::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    bottom: 0;
+	top: 69%;
+    background-color: #1B1D19;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.menu.light > ul > li > ul > li a:hover::before {
+    visibility: hidden;
+}
+.menu.light > ul > li > ul > li a::before {
+	width: 100%;}
 
 
 

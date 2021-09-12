@@ -27,7 +27,7 @@
 				
 				var rev1 = new RevealFx(document.querySelector('#rev-load-1'), {
 					revealSettings : {
-						bgcolor: '#987033',
+						bgcolor: '#838D92',
 						onCover: function(contentEl, revealerEl) {
 							contentEl.style.opacity = 1;
 						}
@@ -43,7 +43,7 @@
 					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -100),				
 					rev1 = new RevealFx(scrollElemToWatch_1, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -54,7 +54,7 @@
 					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -100),				
 					rev2 = new RevealFx(scrollElemToWatch_2, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -65,7 +65,7 @@
 					watcher_3 = scrollMonitor.create(scrollElemToWatch_3, -100),				
 					rev3 = new RevealFx(scrollElemToWatch_3, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -76,7 +76,7 @@
 					watcher_4 = scrollMonitor.create(scrollElemToWatch_4, -100),
 					rev4 = new RevealFx(scrollElemToWatch_4, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -87,7 +87,7 @@
 					watcher_5 = scrollMonitor.create(scrollElemToWatch_5, -100),
 					rev5 = new RevealFx(scrollElemToWatch_5, {
 						revealSettings : {
-							bgcolor: '#987033',
+							bgcolor: '#838D92',
 							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
