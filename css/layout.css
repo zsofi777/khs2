@@ -924,7 +924,7 @@ iframe{
 	border-bottom:1px solid rgba(130,130,130,0);
 }
 .cbp-af-header.light.cbp-af-header-shrink {
-	background: #ece7ddb5;
+	background: #ece7dd;
 	border-bottom:1px solid #987033;
 }
 .cbp-af-header.cbp-af-header-shrink .logo.light,
@@ -1144,7 +1144,7 @@ ul.tabs.light li.current,
 	font-size: 19px;
 	line-height:25px;
 	font-weight:600;
-	letter-spacing: 7.5px;
+	letter-spacing: 2.5px;
 	color:#1B1D19;
 	margin:0 auto;
 	text-align:right;
@@ -1910,6 +1910,11 @@ h6:before{
 	width:100%;
 	margin-bottom:15px;
 }
+
+.title-wrapper.cim{
+	margin-top: 60px;
+}
+
 .title-wrapper .title-text-bottom{
 	position:relative;
 	display:inline-block;
@@ -1939,7 +1944,7 @@ h6:before{
 	display:block;
 }
 .team-wrap img{
-	width:100%;
+	width:60%;
 	display:block;
 	margin-bottom:15px;
 }
@@ -2295,6 +2300,15 @@ figure.vimeo a img, figure.youtube a img {
 	color: #353C44;
 	font-weight: 600;
 }
+.title-wrapper p.larger{
+	text-align:justify;
+	font-size: 17px;
+	line-height:24px;
+	font-style: italic;
+	color: #353C44;
+	font-weight: 600;
+	padding-bottom: 25px;
+}
 .post-wrapper p{
 	text-align:justify;
 	padding-bottom:25px;
@@ -2452,9 +2466,9 @@ figure.vimeo a img, figure.youtube a img {
 }
 .sidebar-list-one li a{
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 17px;
 	line-height:22px;
-	font-weight:600;
+	font-weight:bold;
 	color:#1B1D19;
 	text-align:left;
 	letter-spacing:1px;
@@ -3007,6 +3021,7 @@ figure.vimeo a img, figure.youtube a img {
 	position:relative;
     font-family: 'Roboto', sans-serif;
 	font-size: 17px;
+	font-weight: bold;
 	line-height:38px;
 	text-align:left;
     -webkit-transition: all 300ms linear;
@@ -3716,9 +3731,9 @@ Menu Mobile style's
 }
 #a-my {
 	font-family: 'Roboto', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 22px;
-	font-weight: 600;
+	font-weight: bolder;
 	color: #353C44;
 	text-align: left;
 	letter-spacing: 1px;
@@ -3753,7 +3768,6 @@ Menu Mobile style's
 	padding-bottom: 0%;
 }
 .metaTitle {
-	text-align: center !important;
 	display: block !important;
 	font-size: 24px !important;
 }
@@ -3975,7 +3989,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .seven.columns .home-small-text.acttxt .block-revealer__content {
     font-size: 14px;
-    letter-spacing: 5.5px;
+    letter-spacing: 2.5px;
 } 
 .parallax-home.terkepek {
     background: url(../images/bgTerkepek.png) no-repeat fixed;
@@ -4001,7 +4015,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .seven.columns .home-small-text.maptxt .block-revealer__content {
     font-size: 14px;
-    letter-spacing: 5.5px;
+    letter-spacing: 2.5px;
 } 
 .parallax-home.kimutatasok {
     background: url(../images/bgKimutatasok.png) no-repeat fixed;
@@ -4027,7 +4041,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .seven.columns .home-small-text.kimtxt .block-revealer__content {
     font-size: 14px;
-    letter-spacing: 5.5px;
+    letter-spacing: 2.5px;
 } 
 .parallax-home.meta {
     background: url(../images/bgMeta.png) no-repeat fixed;
@@ -4053,7 +4067,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .seven.columns .home-small-text.metatxt .block-revealer__content {
     font-size: 14px;
-    letter-spacing: 5.5px;
+    letter-spacing: 2.5px;
 } 
 .parallax-home.gyorsjelentesek {
     background: url(../images/bgGyorsjelentesek.png) no-repeat fixed;

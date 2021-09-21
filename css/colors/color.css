@@ -82,10 +82,10 @@ h6,
 }
 
 ::selection {
-	color:#4B7793;
+	color:#593C0F;
 	}
 ::-moz-selection {
-	color:#4B7793;
+	color:#593C0F;
 }
 
 
@@ -102,10 +102,10 @@ h6:before,
 }
 
 ::selection {
-	background: #987033;
+	background: #98703380;
 }
 ::-moz-selection {
-	background: #987033;
+	background: #98703380;
 }
 
 
