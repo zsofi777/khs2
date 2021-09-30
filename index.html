@@ -51,9 +51,11 @@
 	
 
 </head>
-<body class="royal_preloader">	
+<body>	
 	
-	<div id="royal_preloader"></div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 
 	
 	<!-- MENU
@@ -106,28 +108,135 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div class="section big-height back-white">
-		<div class="parallax-home index"></div>
-		<div class="page-center-wrap index">
-			<div class="container">
-				<div class="twelve columns">
-					<div class="home-big-text" id="rev-load-1">KÁRPÁT-HAZA STATISZTIKÁK</div>
-					<h1 class="cd-headline letters type" id="h1letters"> 
-						<span class="cd-words-wrapper waiting">
-							<b class="is-visible">AKTUALITÁSOK</b>
-							<b>TÉRKÉPEK</b>
-							<b>KIMUTATÁSOK</b>
-							<b>META-ADATBÁZIS</b>
-							<b>GYORSJELENTÉSEK</b>
-							<b>TANULMÁNYOK</b>
-						</span>
-					</h1>
+	<div class="section big-height">
+		<div class="container">
+			<div class="six columns">
+				<div class="card card1">
+					<a href="aktualitasok.html">
+						<div class="card-inner">
+							<div class="card-front">
+								<img id="homeImg" src="images/c12.png" alt="">
+							</div>
+							<div class="card-back">
+								<p id="cardTitle">AKTUALITÁSOK</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card card2">
+					<a href="terkepek.html">
+						<div class="card-inner">
+							<div class="card-front">
+								<img id="homeImg" src="images/c22.png" alt="">
+							</div>
+							<div class="card-back">
+								<p id="cardTitle">TÉRKÉPEK</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card card3">
+					<a href="kimutatasok.html">
+						<div class="card-inner">
+							<div class="card-front">
+								<img id="homeImg" src="images/c32.png" alt="">
+							</div>
+							<div class="card-back">
+								<p id="cardTitle">KIMUTATÁSOK</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card card4">
+					<a href="meta-adatbazis.html">
+						<div class="card-inner">
+							<div class="card-front">
+								<img id="homeImg" src="images/c42.png" alt="">
+							</div>
+							<div class="card-back">
+								<p id="cardTitle">META-ADATBÁZIS</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card card5">
+					<a href="gyorsjelentesek.html">
+						<div class="card-inner">
+							<div class="card-front">
+								<img id="homeImg" src="images/c52.png" alt="">
+							</div>
+							<div class="card-back">
+								<p id="cardTitle">GYORSJELENTÉSEK</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="card card6">
+					<a href="tanulmanyok.html">
+						<div class="card-inner">
+							<div class="card-front">
+								<img id="homeImg" src="images/c62.png" alt="">
+							</div>
+							<div class="card-back">
+								<p id="cardTitle">TANULMÁNYOK</p>
+							</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="section padding-top-bottom back-white">
+
+	<div class="section padding-top-bottom">
+
+		<div class="container">
+			<div class="twelve columns" style="margin-top: 150px;">
+				<div class="title-wrapper cim" id="title-wrapper-my2">
+					<div class="title-text-top" id="rev-1">A Kárpát-haza statisztikák küldetése</div>
+					<div class="clear"></div>
+				</div>
+				<div class="post-wrapper">	
+					<p>A Kárpát-haza statisztikák oldalain közzétett adatbázisok <strong>kutatói infrastruktúrát</strong> nyújtanak a Kárpát-medencei magyarság kutatásához, egyúttal támogatják a közszféra Kárpát-medencei kitekintésű műveleteivel kapcsolatos <strong>döntések előkészítését</strong>, segítik a fejlesztések tervezését, megvalósítását, értékelését.</p>
+				</div>
+				<div class="title-wrapper" id="title-wrapper-my2">
+					<div class="title-text-top" id="rev-2">Az adatigénylés módja</div>
+					<div class="clear"></div>
+				</div>
+				<div class="post-wrapper">	
+					<p>Az itt megjelenített térképeken, diagramokon szereplő adatok, valamint a közzétett metaadatok által leírt mutatók adatai elérhetők a Nemzetstratégiai Kutatóintézetnél. Az adatok e-mail küldésével igényelhetők tervezési és tudományos kutatási tevékenységekhez 
+						<strong>[<a id="a-my" href="mailto:gabor.mozga@nski.gov.hu">gabor.mozga@nski.gov.hu</a>]</strong>.</p>
+				</div>
+				<div class="title-wrapper" id="title-wrapper-my2">
+					<div class="title-text-top" id="rev-3">Adattartalmak: Környező országok statisztikái és nyilvántartásai</div>
+					<div class="clear"></div>
+				</div>
+				<div class="post-wrapper">	
+					<p>Ezeken az oldalakon az NSKI teljes adatgyűjtésének csak töredéke kerül megjelenítésre. Az itt közzétett <strong>metaadatok</strong> azonban már a jelentős részét leírják azoknak a mutatóknak, amelyekhez tartozó adatsorok az NSKI-ban rendszerezetten hozzáférhetők. Ugyanakkor a mutatók többsége esetében a metaadatok feldolgozása és az egyes országok között megfeleltethető mutatók azonosítása még folyamatban van.
+						A Nemzetstratégiai Kutatóintézet fennállása óta több tízezer mutató több milliónyi adatát gyűjtötte össze Magyarországról és különösen a környező országokból. Az adatok között találunk nyilvános, digitális vagy analóg formában elérhető statisztikai adatokat, és az európai, valamint országos felmérésekből és nyilvántartásokból származó adatokat. Ezeknek az adatoknak a gyűjtése, frissítése és feldolgozása folyamatos. Ez az adatvagyon egy egységes Kárpát-medencei magyar statisztikai információs rendszer alapja lehet. 
+						<br>Ld. bővebben a Kárpát-medencei magyarság statisztikai adatellátottságáról: a kutatási jelentés elérhető <strong><a id="a-my" href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.</p>	
+				</div>	
+				<div class="title-wrapper" id="title-wrapper-my2">
+					<div class="title-text-top" id="rev-4">Adattartalmak: Az NSKI saját adatfelmérései</div>
+					<div class="clear"></div>
+				</div>
+				<div class="post-wrapper">	
+					<p>Statisztikai adatokon keresztül csak korlátosan lehet vizsgálni a Kárpát-medencei magyarságot és településterületét. Ezért az NSKI saját nagymintás, a nagyobb nemzetrészekben reprezentatív felméréseket is indított (<i>Életminőség és jólét 2018-2019</i>). E felmérés adatai alkalmasak rá, hogy tájékoztassanak a magyar nemzetrészek jóllétéről, valamint egymáshoz és – további elemzésekkel – a többségi nemzetekhez viszonyított társadalmi és gazdasági pozícióiról. A felmerés adatainak egy része is megjelenítésre kerül itt, és e felmérés összes adatai is igényelhetők. 
+						<br>Ld. bővebben e nagymintás felmérésről: a kutatási jelentés elérhető <strong><a id="a-my" href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.</p>	
+				</div>	
+				<div class="title-wrapper" id="title-wrapper-my2">
+					<div class="title-text-top" id="rev-5">Az adatbázis kifejlesztését támogató projektek</div>
+					<div class="clear"></div>
+				</div>
+				<div class="post-wrapper">	
+					<p>Az <strong><a id="a-my" href="http://nski.hu/efop-3-10-1-17-2017-00002.html">EFOP 3.10.1-17-2017-00002</a></strong> azonosító számú <span style="font-style: italic;">"Az oktatási struktúrák Kárpát-medencei makroregionális együttműködését támogató kutatások"</span> elnevezésű és 
+						<br>az <strong><a id="a-my" href="http://nski.hu/efop-1-12-17-2017-00003_hu.html">EFOP 1.12.1-17-2017-00003</a></strong> azonosító számú <span style="font-style: italic;">"Makroregionális kutatások a Kárpát-medencében a közösségfejlesztés és társadalmi felelősségvállalás megerősítése érdekében"</span> nevet viselő európai uniós finanszírozású projektek segítségével készült el az adatbázis.</p>	
+				</div>	
+				
+				<div class="clear"></div>	
+
+			</div>	
+		</div>
 
 		<div class="container">
 			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s">
@@ -178,63 +287,12 @@
 					</div>
 				</a>	
 			</div>
-		</div>
-
-		<div class="container">
-			<div class="twelve columns">
-				<div class="title-wrapper cim" id="title-wrapper-my2">
-					<div class="title-text-top" id="rev-1">A Kárpát-haza statisztikák küldetése</div>
-					<div class="clear"></div>
-				</div>
-				<div class="post-wrapper">	
-					<p>A Kárpát-haza statisztikák oldalain közzétett adatbázisok <strong>kutatói infrastruktúrát</strong> nyújtanak a Kárpát-medencei magyarság kutatásához, egyúttal támogatják a közszféra Kárpát-medencei kitekintésű műveleteivel kapcsolatos <strong>döntések előkészítését</strong>, segítik a fejlesztések tervezését, megvalósítását, értékelését.</p>
-				</div>
-				<div class="title-wrapper" id="title-wrapper-my2">
-					<div class="title-text-top" id="rev-2">Az adatigénylés módja</div>
-					<div class="clear"></div>
-				</div>
-				<div class="post-wrapper">	
-					<p>Az itt megjelenített térképeken, diagramokon szereplő adatok, valamint a közzétett metaadatok által leírt mutatók adatai elérhetők a Nemzetstratégiai Kutatóintézetnél. Az adatok e-mail küldésével igényelhetők tervezési és tudományos kutatási tevékenységekhez 
-						<strong>[<a id="a-my" href="mailto:gabor.mozga@nski.gov.hu">gabor.mozga@nski.gov.hu</a>]</strong>.</p>
-				</div>
-				<div class="title-wrapper" id="title-wrapper-my2">
-					<div class="title-text-top" id="rev-3">Adattartalmak: Környező országok statisztikái és nyilvántartásai</div>
-					<div class="clear"></div>
-				</div>
-				<div class="post-wrapper">	
-					<p>Ezeken az oldalakon az NSKI teljes adatgyűjtésének csak töredéke kerül megjelenítésre. Az itt közzétett <strong>metaadatok</strong> azonban már a jelentős részét leírják azoknak a mutatóknak, amelyekhez tartozó adatsorok az NSKI-ban rendszerezetten hozzáférhetők. Ugyanakkor a mutatók többsége esetében a metaadatok feldolgozása és az egyes országok között megfeleltethető mutatók azonosítása még folyamatban van.
-						A Nemzetstratégiai Kutatóintézet fennállása óta több tízezer mutató több milliónyi adatát gyűjtötte össze Magyarországról és különösen a környező országokból. Az adatok között találunk nyilvános, digitális vagy analóg formában elérhető statisztikai adatokat, és az európai, valamint országos felmérésekből és nyilvántartásokból származó adatokat. Ezeknek az adatoknak a gyűjtése, frissítése és feldolgozása folyamatos. Ez az adatvagyon egy egységes Kárpát-medencei magyar statisztikai információs rendszer alapja lehet. 
-						<br>Ld. bővebben a Kárpát-medencei magyarság statisztikai adatellátottságáról: a kutatási jelentés elérhető <strong><a id="a-my" href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.</p>	
-				</div>	
-				<div class="title-wrapper" id="title-wrapper-my2">
-					<div class="title-text-top" id="rev-4">Adattartalmak: Az NSKI saját adatfelmérései</div>
-					<div class="clear"></div>
-				</div>
-				<div class="post-wrapper">	
-					<p>Statisztikai adatokon keresztül csak korlátosan lehet vizsgálni a Kárpát-medencei magyarságot és településterületét. Ezért az NSKI saját nagymintás, a nagyobb nemzetrészekben reprezentatív felméréseket is indított (<i>Életminőség és jólét 2018-2019</i>). E felmérés adatai alkalmasak rá, hogy tájékoztassanak a magyar nemzetrészek jóllétéről, valamint egymáshoz és – további elemzésekkel – a többségi nemzetekhez viszonyított társadalmi és gazdasági pozícióiról. A felmerés adatainak egy része is megjelenítésre kerül itt, és e felmérés összes adatai is igényelhetők. 
-						<br>Ld. bővebben e nagymintás felmérésről: a kutatási jelentés elérhető <strong><a id="a-my" href="http://nski.hu/admin/data/file/20200707/karpat-medencei_magyarok_tars-gazd_adatai_tanulm.pdf">itt</a></strong>.</p>	
-				</div>	
-				<div class="title-wrapper" id="title-wrapper-my2">
-					<div class="title-text-top" id="rev-5">Az adatbázis kifejlesztését támogató projektek</div>
-					<div class="clear"></div>
-				</div>
-				<div class="post-wrapper">	
-					<p>Az <strong><a id="a-my" href="http://nski.hu/efop-3-10-1-17-2017-00002.html">EFOP 3.10.1-17-2017-00002</a></strong> azonosító számú <i>Az oktatási struktúrák Kárpát-medencei makroregionális együttműködését támogató kutatások</i> elnevezésű és 
-						<br>az <strong><a id="a-my" href="http://nski.hu/efop-1-12-17-2017-00003_hu.html">EFOP 1.12.1-17-2017-00003</a></strong> azonosító számú <i>Makroregionális kutatások a Kárpát-medencében a közösségfejlesztés és társadalmi felelősségvállalás megerősítése érdekében</i> nevet viselő európai uniós finanszírozású projektek segítségével készült el az adatbázis.</p>	
-				</div>	
+		</div>		
 				
-				<div class="clear"></div>	
-
-			</div>	
-		</div>
-				
-		<div class="clear"></div>
-
-
-		
+		<div class="clear"></div>	
 	</div>
 
-	<div class="section padding-top-bottom back-white footer">
+	<div class="section padding-top-bottom footer">
 		<div class="container">
 			<div class="four columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s">
 				<a href="index.html" class="logo-text-footer">KÁRPÁT-HAZA STATISZTIKÁK</a>
@@ -259,19 +317,19 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	//Preloader
 
-	Royal_Preloader.config({
-        mode:        'progress',
-		background     : '#FFFFFF',
-		showProgress   : true,
-		showPercentage : false
-	});
-})(jQuery);
+<!-- LOADER================================================== -->
+<script type="text/javascript">
+	(function($) { "use strict";
+		$(window).load(function() {
+			setTimeout(function(){        
+				$('.loader_inner').fadeOut();
+				$('.loader').delay(150).fadeOut('slow'); 
+			}, 1000);
+		});
+	})(jQuery);
 </script> 
+<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/parallax.js"></script> 
@@ -293,3 +351,167 @@
 ================================================== -->
 </body>
 </html>
+
+<style>
+body {
+	background: url(/images/kezdolapBg2.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}	
+.six.columns {
+    margin: 8% auto;
+    float: none;
+    display: flex;
+    width: 800px !important;
+}
+.card {
+  background-color: transparent;
+  width: 120px;
+  height: 290px;
+  perspective: 1000px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  writing-mode: vertical-rl;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.card-front {
+  background-color: #AFB0AE;
+  color: #1B1D19;
+}
+.card3 .card-front {
+  background-color: #4B7793;
+  color: #ECE7DD;
+}
+.card1 .card-back {
+  background-color: #4B7793;
+  color: #ECE7DD;
+  transform: rotateY(180deg);
+}
+.card2 .card-back {
+  background-color: #593C0F;
+  color: #ECE7DD;
+  transform: rotateY(180deg);
+}
+.card3 .card-back {
+  background-color: #838D92;
+  color: #ECE7DD;
+  transform: rotateY(180deg);
+}
+.card4 .card-back {
+  background-color: #987033;
+  color: #ECE7DD;
+  transform: rotateY(180deg);
+}
+.card5 .card-back {
+  background-color: #353C44;
+  color: #ECE7DD;
+  transform: rotateY(180deg);
+}
+.card6 .card-back {
+  background-color: #1B1D19;
+  color: #ECE7DD;
+  transform: rotateY(180deg);
+}
+#cardTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+.card1 {
+    height: 260px;
+}
+.card2 {
+    height: 340px;
+}
+.card3 {
+    height: 500px;
+}
+.card4 {
+    height: 430px;
+}
+.card5 {
+    height: 370px;
+}
+.card6 {
+    height: 310px;
+	padding-top: 7%;
+}
+img#homeImg {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+.two.columns {
+	margin-top: 150px;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+	.six.columns {
+		margin: 40% -12%;
+		float: none;
+		display: flex;
+		width: 290px !important;
+	}
+	.card {
+		background-color: transparent;
+		width: 49px;
+		height: 150px;
+		perspective: 1000px;
+		margin: auto 2%;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 14px;
+		writing-mode: vertical-rl;
+	}
+	.card1 {
+		height: 130px;
+	}
+	.card2 {
+		height: 170px;
+	}
+	.card3 {
+		height: 250px;
+	}
+	.card4 {
+		height: 215px;
+	}
+	.card5 {
+		height: 185px;
+	}
+	.card6 {
+		height: 155px;
+		padding-top: 7%;
+	}
+	.two.columns {
+		margin-top: 75px;
+	}
+}
+</style>

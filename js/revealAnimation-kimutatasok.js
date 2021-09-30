@@ -48,38 +48,8 @@
 
 
 				//************************ reveal on scroll ********************************
-				
-				var scrollElemToWatch_1 = document.getElementById('rev-1'),
-					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
-					rev1 = new RevealFx(scrollElemToWatch_1, {
-						revealSettings : {
-							bgcolor: '#838D92',
-							direction: 'rl',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
-					rev2 = new RevealFx(document.querySelector('#rev-2'), {
-						revealSettings : {
-							bgcolor: '#4B7793',
-							delay: 250,
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
-					rev3 = new RevealFx(document.querySelector('#rev-3'), {
-						revealSettings : {
-							bgcolor: '#B79B70',
-							delay: 500,
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
 
-					scrollElemToWatch_2 = document.getElementById('rev-4'),
+				var	scrollElemToWatch_2 = document.getElementById('rev-4'),
 					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -300),
 					rev4 = new RevealFx(scrollElemToWatch_2, {
 						revealSettings : {
@@ -517,12 +487,7 @@
 						}
 					})
 
-				watcher_1.enterViewport(function() {
-					rev1.reveal();
-					rev2.reveal();
-					rev3.reveal();
-					watcher_1.destroy();
-				});
+
 				watcher_2.enterViewport(function() {
 					rev4.reveal();
 					rev5.reveal();

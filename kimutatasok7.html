@@ -51,9 +51,11 @@
 	
 	
 </head>
-<body class="royal_preloader">	
+<body>	
 	
-	<div id="royal_preloader"></div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 	
 	
 	<!-- MENU
@@ -106,19 +108,7 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div class="section big-height back-white">
-		<div class="parallax-project kimutatasok"></div>
-		<div class="light-over-portfolio"></div>
-		<div class="page-center-wrap">
-			<div class="container">
-				<div class="seven columns">
-					<div class="home-big-text other-font" id="rev-load-1">KIMUTATÁSOK</div>
-					<br/>
-					<div class="home-small-text kimtxt" id="rev-load-2">Népszámlálási kimutatások Szerbiában nemzetiségenként</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="section big-heightAloldal back-white"></div>
 
 	<div class="section padding-top-bottom back-white">
 		<div class="container">			
@@ -161,19 +151,19 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	//Preloader
 
-	Royal_Preloader.config({
-        mode:        'progress',
-		background     : '#FFFFFF',
-		showProgress   : true,
-		showPercentage : false
-	});
-})(jQuery);
+<!-- LOADER================================================== -->
+<script type="text/javascript">
+	(function($) { "use strict";
+		$(window).load(function() {
+			setTimeout(function(){        
+				$('.loader_inner').fadeOut();
+				$('.loader').delay(150).fadeOut('slow'); 
+			}, 1000);
+		});
+	})(jQuery);
 </script> 
+<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/scrolltoid.js"></script> 

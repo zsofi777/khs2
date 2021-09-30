@@ -51,9 +51,11 @@
 	
 	
 </head>
-<body class="royal_preloader">	
+<body>	
 	
-	<div id="royal_preloader"></div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 
 	
 	<!-- MENU
@@ -107,7 +109,7 @@
 	================================================== -->
 
 	<div class="section big-height back-white">
-		<div class="parallax-home kimutatasok"></div>
+		<div class="parallax-home kimutatasok" style="background-position: 50% 132% !important;"></div>
 		<div class="page-center-wrap">
 			<div class="container">
 				<div class="seven columns">
@@ -122,7 +124,7 @@
 	<div class="section padding-top-bottom back-white">
 
 			<div class="container">
-				<div class="twelve columns">
+				<div class="twelve columns" style="margin-top: 30px;">
 					<div class="title-wrapper cim">
 						<div class="title-text-top" id="rev-43">A Kárpát-haza leíróadatokkal</div>
 						<div class="clear"></div>
@@ -455,19 +457,19 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	//Preloader
 
-	Royal_Preloader.config({
-        mode:        'progress',
-		background     : '#FFFFFF',
-		showProgress   : true,
-		showPercentage : false
-	});
-})(jQuery);
+<!-- LOADER================================================== -->
+<script type="text/javascript">
+	(function($) { "use strict";
+		$(window).load(function() {
+			setTimeout(function(){        
+				$('.loader_inner').fadeOut();
+				$('.loader').delay(150).fadeOut('slow'); 
+			}, 1000);
+		});
+	})(jQuery);
 </script> 
+<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/parallax.js"></script> 

@@ -51,9 +51,11 @@
 	
 	
 </head>
-<body class="royal_preloader">	
+<body>	
 	
-	<div id="royal_preloader"></div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 	
 	
 	<!-- MENU
@@ -106,20 +108,8 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div class="section big-height back-white">
-		<div class="parallax-project terkepek"></div>
-		<div class="light-over-portfolio"></div>
-		<div class="page-center-wrap">
-			<div class="container">
-				<div class="seven columns">
-					<div class="home-big-text other-font" id="rev-load-1">TÉRKÉPEK</div>
-					<br/>
-					<div class="home-small-text maptxt" id="rev-load-2">DEMOGRÁFIA - 0-14 éves és 15-64 éves lakosság aránya a Kárpát-medence egyes térségeiben (2017)</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	<div class="section big-heightAloldal back-white"></div>
+	
 	<div class="section padding-top-bottom back-white">
 		<div class="container">			
 			<div class="tableauPlaceholder mobilehidden" id="viz1594930111612" style="position: relative; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.3); margin: auto;"><noscript><a href="#"><img alt=" " src="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_014ELT2017/1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="64XXEV2017_15949000443060/_014ELT2017"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/64/64XXEV2017_15949000443060/_014ELT2017/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"><param name="device" value="desktop"></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1594930111612');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>          
@@ -161,19 +151,19 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	//Preloader
 
-	Royal_Preloader.config({
-        mode:        'progress',
-		background     : '#FFFFFF',
-		showProgress   : true,
-		showPercentage : false
-	});
-})(jQuery);
+<!-- LOADER================================================== -->
+<script type="text/javascript">
+	(function($) { "use strict";
+		$(window).load(function() {
+			setTimeout(function(){        
+				$('.loader_inner').fadeOut();
+				$('.loader').delay(150).fadeOut('slow'); 
+			}, 1000);
+		});
+	})(jQuery);
 </script> 
+<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/scrolltoid.js"></script> 

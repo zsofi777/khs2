@@ -23,6 +23,34 @@
 
 /* 1.Preloader */
 
+.loader {
+	background: none repeat scroll 0 0 #ECE7DD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999; 
+}
+
+.loader .loader_inner {
+	background-image: url("images/loader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #ECE7DD;
+	height: 400px;
+	width: 400px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }}
+
 body.royal_preloader {
     background: none;
     visibility: hidden;
@@ -4137,6 +4165,24 @@ i.jstree-icon.jstree-themeicon {
 	width: 100%;}
 
 
+
+	
+.big-heightAloldal {
+	height: 30vh;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+	.big-heightAloldal {
+		height: 20vh;
+	}
+	.logo-text-footer {
+		font-size: 14px;
+		text-align: center;
+	}
+	.copyright-text {
+		margin-top: 15%;
+	}
+}
 
 
 

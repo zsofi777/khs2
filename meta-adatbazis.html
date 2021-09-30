@@ -51,9 +51,11 @@
 	
 
 </head>
-<body class="royal_preloader">	
+<body>	
 	
-	<div id="royal_preloader"></div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 
 	
 	<!-- MENU
@@ -122,7 +124,7 @@
 	<div class="section padding-top-bottom back-white">
 
 		<div class="container">
-			<div class="twelve columns">
+			<div class="twelve columns" style="margin-top: 30px;">
 				<div class="title-wrapper cim">	
 					<p class="larger">Ez az oldal rendszerezve és kereshető formában adja közre az NSKI által a Kárpát-haza statisztikák részévé tett adatok metaadatait.</p>
 					<p>Az alábbi három rendezőszempont – mutató témakörök, országok, területi szintek – felől közelítve, egy fastruktúra mentén lehet böngészni a mutatók között, valamint lehetőség van táblázatos formában is megnyitni a metaadatbázist. Az itt megjelenített mutatók adatai az NSKI-ban elérhetők és igényelhetők (és a még ezen túlmutató, metaadatokkal nem feldolgozott adatok is). E mutatók adatait Magyarország a környező országok statisztikai hivatalai vagy nyilvántartásai gyűjtik, vagy az NSKI saját felmerésiből származnak. Az adatbázist folyamatosan bővítjuk, jelenleg körülbelül 7 ezer mutatót tartalmaz.
@@ -216,19 +218,19 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	//Preloader
 
-	Royal_Preloader.config({
-        mode:        'progress',
-		background     : '#FFFFFF',
-		showProgress   : true,
-		showPercentage : false
-	});
-})(jQuery);
+<!-- LOADER================================================== -->
+<script type="text/javascript">
+	(function($) { "use strict";
+		$(window).load(function() {
+			setTimeout(function(){        
+				$('.loader_inner').fadeOut();
+				$('.loader').delay(150).fadeOut('slow'); 
+			}, 1000);
+		});
+	})(jQuery);
 </script> 
+<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/parallax.js"></script> 

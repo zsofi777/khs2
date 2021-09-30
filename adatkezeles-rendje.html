@@ -42,9 +42,11 @@
 	
 	
 </head>
-<body class="royal_preloader">	
+<body>	
 	
-	<div id="royal_preloader"></div>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 	
 	
 	<!-- MENU
@@ -99,7 +101,7 @@
 
 	<div class="section padding-top-big back-white">
 		<div class="container">
-			<div class="twelve columns">
+			<div class="twelve columns" style="margin-top: 0px;">
 				<div class="title-wrapper cim">
 					<div class="title-text-top" id="rev-load-1">ADATKEZELÉS RENDJE</div>
 				</div>
@@ -113,7 +115,7 @@
 
 	<div class="section">
 		<div class="container">
-			<div class="twelve columns">				
+			<div class="twelve columns" style="margin-top: 20px;">				
 				<div class="post-wrapper">	
 					<p>A <a id="a-my" href="http://www.nski.hu">Nemzetstratégiai Kutatóintézet</a>, mint a <a id="a-my" href="http://www.karpat-haza-statisztikak.hu/">www.karpat-haza-statisztikak.hu</a> (továbbiakban: Weboldal) tulajdonosa és üzemeltetője kijelenti, hogy a honalapon keresztül megszerzett adatokat a mindenkori hatályos jogszabályoknak megfelelően kezeli.
 					<br>
@@ -246,19 +248,19 @@
 	<!-- JAVASCRIPT
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
-<script type="text/javascript" src="js/royal_preloader.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	//Preloader
 
-	Royal_Preloader.config({
-        mode:        'progress',
-		background     : '#FFFFFF',
-		showProgress   : true,
-		showPercentage : false
-	});
-})(jQuery);
+<!-- LOADER================================================== -->
+<script type="text/javascript">
+	(function($) { "use strict";
+		$(window).load(function() {
+			setTimeout(function(){        
+				$('.loader_inner').fadeOut();
+				$('.loader').delay(150).fadeOut('slow'); 
+			}, 1000);
+		});
+	})(jQuery);
 </script> 
+<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/scrolltoid.js"></script> 
