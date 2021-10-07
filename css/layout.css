@@ -49,7 +49,7 @@
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-  }}
+  }
 
 body.royal_preloader {
     background: none;
@@ -335,7 +335,7 @@ body.royal_preloader {
 	height:100vh;
 }
 .big-height{
-	height:80vh;
+	height:70vh;
 }
 .half-height{
 	height:50vh;
@@ -746,7 +746,7 @@ body.royal_preloader {
 	color:#c5c5c5;
 	font-family: 'Roboto', sans-serif;
 	font-weight:500;
-	font-size: 12px;
+	font-size: 11px;
 	line-height:18px;
 	letter-spacing:2px;
 	text-transform:uppercase;
@@ -1940,7 +1940,7 @@ h6:before{
 }
 
 .title-wrapper.cim{
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 .title-wrapper .title-text-bottom{
@@ -2507,7 +2507,7 @@ figure.vimeo a img, figure.youtube a img {
     transition: all 300ms linear;
 }
 .sidebar-list-one li a:hover{
-	padding-left:5px;
+	padding-left:1px;
 }
 .sidebar-list-one li:last-child{
 	margin-bottom:0;
@@ -3775,7 +3775,7 @@ Menu Mobile style's
 	text-decoration: none;
 }
 #a-my:hover {
-	padding-left: 5px;
+	padding-left: 1px;
 	color: #987033;
 }
 #portfolio-box-1-my {
@@ -3841,13 +3841,13 @@ Menu Mobile style's
 	display: none;
 } 
 .jstree-open > a .jstree-icon {
-	background:url(https://img.icons8.com/metro/24/4B7793/chevron-down.png) 0px 0px no-repeat !important;
+	background:url(https://img.icons8.com/metro/24/987033/chevron-down.png) 0px 0px no-repeat !important;
 }
 .jstree-closed > a .jstree-icon {
-	background:url(https://img.icons8.com/metro/24/4B7793/chevron-down.png) 0px 0px no-repeat !important;
+	background:url(https://img.icons8.com/metro/24/987033/chevron-down.png) 0px 0px no-repeat !important;
 }
 .jstree-leaf > a .jstree-icon { 
-	background:url(https://img.icons8.com/metro/24/4B7793/chevron-up.png) 0px 0px no-repeat !important; 
+	background:url(https://img.icons8.com/metro/24/987033/chevron-up.png) 0px 0px no-repeat !important; 
 }
 .glyphicon-leaf:before {
 	display: none;
@@ -3916,7 +3916,7 @@ a#Katter_anchor.jstree-anchor {
 #search input:focus {
 	border: 2px solid #987033 !important;
 }
-#search_tree {
+button#search_tree {
 	width: 15%;
 	background-color:#987033;
 	padding: 12px 20px;
@@ -3971,6 +3971,11 @@ i.jstree-icon.jstree-themeicon {
 	}
 }
 
+#metah3 {
+	font-weight: 600;
+	padding: 0 0 15px 0;
+}
+
 .team-wrap h6 {
 	font-weight: 600;
 	color: #593C0F;
@@ -3995,7 +4000,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-home.aktualitasok {
     background: url(../images/bgAktualitasok.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4006,7 +4011,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.aktualitasok {
     background: url(../images/bgAktualitasok.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4021,7 +4026,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.terkepek {
     background: url(../images/bgTerkepek.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4032,7 +4037,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.terkepek {
     background: url(../images/bgTerkepek.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4047,7 +4052,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.kimutatasok {
     background: url(../images/bgKimutatasok.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4058,7 +4063,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.kimutatasok {
     background: url(../images/bgKimutatasok.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4073,7 +4078,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.meta {
     background: url(../images/bgMeta.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4084,7 +4089,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.meta {
     background: url(../images/bgMeta.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4099,7 +4104,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.gyorsjelentesek {
     background: url(../images/bgGyorsjelentesek.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4110,7 +4115,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-home.tanulmanyok {
     background: url(../images/bgTanulmanyok.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4121,7 +4126,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-home.index {
     background: url(../images/bgIndex.png) no-repeat fixed;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -4183,6 +4188,19 @@ i.jstree-icon.jstree-themeicon {
 		margin-top: 15%;
 	}
 }
+
+#indexMenuCol {
+	margin-top: 6%;
+}
+
+.padding-top-bottom.footer {
+    padding-bottom: 20px;
+}
+
+.footer div.four.columns {
+    margin-top: 0px;
+}
+
 
 
 

@@ -71,13 +71,7 @@
 							<a href="aktualitasok.html">Aktualitások</a> <!-- main links -->
 						</li>
 						<li> 
-							<a href="terkepek.html">Térképek</a> <!-- main links -->
-							<ul class="normal-sub">
-								<li><a href="#demografia">DEMOGRÁFIA</a></li>
-								<li><a href="#gazdasag">GAZDASÁG</a></li>
-								<li><a href="#kozneveles">KÖZNEVELÉS</a></li>
-								<li><a href="#egeszsegugy">EGÉSZSÉGÜGY</a></li>
-							</ul>
+							<a href="terkepek.html">Térképek</a>
 						</li>
 						<li>
 							<a href="kimutatasok.html">Kimutatások</a> <!-- main links -->
@@ -187,8 +181,11 @@
 		</div>
 	</div>
 
+	<div class="container" id="arrow"><a href="#start"><img id="arrowImg" src="images/icons/arr2.png" alt=""></a></div>
 
-	<div class="section padding-top-bottom">
+
+
+	<div class="section padding-top-bottom" id="start">
 
 		<div class="container">
 			<div class="twelve columns" style="margin-top: 150px;">
@@ -238,8 +235,10 @@
 			</div>	
 		</div>
 
+		
+
 		<div class="container">
-			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.1s">
 				<a href="aktualitasok.html">
 					<div class="team-wrap">
 						<img src="images/icons/1.png" alt="">
@@ -247,7 +246,7 @@
 					</div>
 				</a>	
 			</div>
-			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.3s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.3s">
 				<a href="terkepek.html">	
 					<div class="team-wrap">
 						<img src="images/icons/2.png" alt="">
@@ -255,7 +254,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.5s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.5s">
 				<a href="kimutatasok.html">	
 					<div class="team-wrap">
 						<img src="images/icons/3.png" alt="">
@@ -263,7 +262,7 @@
 					</div>
 				</a>		
 			</div>
-			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.7s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.7s">
 				<a href="meta-adatbazis.html">	
 					<div class="team-wrap">
 						<img src="images/icons/4.png" alt="">
@@ -271,7 +270,7 @@
 					</div>
 				</a>	
 			</div>
-			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.9s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.9s">
 				<a href="gyorsjelentesek.html">	
 					<div class="team-wrap">
 						<img src="images/icons/5.png" alt="">
@@ -279,7 +278,7 @@
 					</div>
 				</a>	
 			</div>
-			<div class="two columns" data-scroll-reveal="enter bottom move 60px over 0.9s after 1.1s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 1.1s">
 				<a href="tanulmanyok.html">	
 					<div class="team-wrap">
 						<img src="images/icons/6.png" alt="">
@@ -354,7 +353,7 @@
 
 <style>
 body {
-	background: url(images/kezdolapBg2.png) !important;
+	background: url(images/kezdolapBg.png) !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -363,11 +362,11 @@ body {
     margin: 8% auto;
     float: none;
     display: flex;
-    width: 800px !important;
+    width: 1314px !important;
 }
 .card {
   background-color: transparent;
-  width: 120px;
+  width: 180px;
   height: 290px;
   perspective: 1000px;
   margin: auto;
@@ -393,14 +392,6 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-}
-.card-front {
-  background-color: #AFB0AE;
-  color: #1B1D19;
-}
-.card3 .card-front {
-  background-color: #4B7793;
-  color: #ECE7DD;
 }
 .card1 .card-back {
   background-color: #4B7793;
@@ -440,23 +431,23 @@ body {
     margin-top: 0;
 }
 .card1 {
-    height: 260px;
+    height: 261px;
 }
 .card2 {
-    height: 340px;
+    height: 359px;
 }
 .card3 {
-    height: 500px;
+    height: 460px;
 }
 .card4 {
-    height: 430px;
+    height: 411px;
 }
 .card5 {
-    height: 370px;
+    height: 349px;
 }
 .card6 {
-    height: 310px;
-	padding-top: 7%;
+    height: 291px;
+	padding-top: 4.5%;
 }
 img#homeImg {
     max-width: 100%;
@@ -471,6 +462,23 @@ img#homeImg {
 	margin-top: 150px;
 }
 
+.section.padding-top-bottom {
+	background: #ece7dd !important;
+    margin-top: 27px;
+}
+.twelve.columns {
+	margin-top: 13px !important;
+}
+#arrow {
+	text-align: center;
+    margin-top: 2%;
+}
+#arrowImg {
+	width: 60px;
+}
+#arrowImg:hover {
+	padding-top: 5px;
+}
 
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {

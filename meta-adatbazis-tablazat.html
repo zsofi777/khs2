@@ -237,9 +237,6 @@
 </head>
 <body>	
 	
-	<div class="loader">
-		<div class="loader_inner"></div>
-	</div>
 	
 	
 	<!-- MENU
@@ -247,21 +244,15 @@
 
 	<nav id="menu-wrap" class="menu-back cbp-af-header light cbp-af-header-shrink"> <!-- fixed container --> <!-- ADD CLASS LIGHT ON FIXED CONTAINER TO CHANGE IT TO LIGHT SCHEME -->
 		<div class="menu-container">
-			<div class="logo light"><a href="index.html"><img id="khsLogo" src="./images/logos/logo.png" alt=""></a></div>
-				<div class="logo light nskilogo"><a href="http://nski.hu/" target="_blank"><img id="nskiLogo" src="./images/logos/logoNSKI.png" alt=""></a></div> <!-- logo in absolute position --> <!-- ADD CLASS LIGHT ON LOGO TO CHANGE LOGO FOR LIGHT SCHEME -->
+			<div class="logo light"><a href="index.html"><img id="khsLogo" src="images/logos/logo.png" alt=""></a></div>
+				<div class="logo light nskilogo"><a href="http://nski.hu/" target="_blank"><img id="nskiLogo" src="images/logos/logoNSKI.png" alt=""></a></div> <!-- logo in absolute position --> <!-- ADD CLASS LIGHT ON LOGO TO CHANGE LOGO FOR LIGHT SCHEME -->
 			<div class="menu light"> <!-- menu start --> <!-- ADD CLASS LIGHT ON MENU TO CHANGE MENU TO LIGHT SCHEME -->
 				<ul> 
 					<li>
 						<a href="aktualitasok.html">Aktualitások</a> <!-- main links -->
 					</li>
 					<li> 
-						<a href="terkepek.html">Térképek</a> <!-- main links -->
-						<ul class="normal-sub">
-							<li><a href="terkepek.html#demografia">DEMOGRÁFIA</a></li>
-							<li><a href="terkepek.html#gazdasag">GAZDASÁG</a></li>
-							<li><a href="terkepek.html#kozneveles">KÖZNEVELÉS</a></li>
-							<li><a href="terkepek.html#egeszsegugy">EGÉSZSÉGÜGY</a></li>
-						</ul>
+						<a href="terkepek.html">Térképek</a>
 					</li>
 					<li>
 						<a href="kimutatasok.html">Kimutatások</a> <!-- main links -->
@@ -380,18 +371,6 @@
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
 
-<!-- LOADER================================================== -->
-<script type="text/javascript">
-	(function($) { "use strict";
-		$(window).load(function() {
-			setTimeout(function(){        
-				$('.loader_inner').fadeOut();
-				$('.loader').delay(150).fadeOut('slow'); 
-			}, 1000);
-		});
-	})(jQuery);
-</script> 
-<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/scrolltoid.js"></script> 

@@ -43,9 +43,8 @@
 	
 	
 </head>
-<body class="royal_preloader" style="overflow-x: unset;">	
+<body style="overflow-x: unset;">	
 	
-	<div id="royal_preloader"></div>
 	
 	
 	<!-- MENU
@@ -61,13 +60,7 @@
 						<a href="aktualitasok.html">Aktualitások</a> <!-- main links -->
 					</li>
 					<li> 
-						<a href="terkepek.html">Térképek</a> <!-- main links -->
-						<ul class="normal-sub">
-							<li><a href="terkepek.html#demografia">DEMOGRÁFIA</a></li>
-							<li><a href="terkepek.html#gazdasag">GAZDASÁG</a></li>
-							<li><a href="terkepek.html#kozneveles">KÖZNEVELÉS</a></li>
-							<li><a href="terkepek.html#egeszsegugy">EGÉSZSÉGÜGY</a></li>
-						</ul>
+						<a href="terkepek.html">Térképek</a>
 					</li>
 					<li>
 						<a href="kimutatasok.html">Kimutatások</a> <!-- main links -->
@@ -100,7 +93,6 @@
 
 	<div class="section big-height back-white">
 		<div class="parallax-project meta"></div>
-		<div class="light-over-portfolio"></div>
 		<div class="page-center-wrap">
 			<div class="container">
 				<div class="seven columns">
@@ -114,7 +106,7 @@
 
 	<div class="section padding-top-bottom back-white">
 		<div class="container">
-			<div class="twelve columns">
+			<div class="twelve columns" style="margin-top: 30px;">
 				<div class="title-wrapper cim">
 					<div class="title-text-bottom" id="rev-1">Az alábbiakban <strong>országok szerint</strong> rendezve lehetséges a fastruktúrájú 
 						metaadatbázis böngészése, valamint kulcsszavas keresésre is lehetőség van.</div>
@@ -131,7 +123,7 @@
 
 		<div class="container">
 			<div id="FaDoboz" class="Tree">
-				<h3>Mutatók</h3>
+				<h3 id="metah3">Mutatók</h3>
 				<div id="SimpleJSTree" class="jstree jstree-1 jstree-default" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="Kat1002" aria-busy="false">
 					<ul class="jstree-container-ul jstree-children" role="group">
 						<li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Kat1001_anchor" aria-expanded="false" id="Kat1001" class="jstree-node  jstree-closed">
@@ -169,7 +161,7 @@
 			</div>
 
 			<div id="Leiro" class="Desc">
-				<h3>Mutatók leírása</h3>
+				<h3 id="metah3">Mutatók leírása</h3>
 				<div id="data"></div>
 			</div>
 		</div>
@@ -202,18 +194,6 @@
     ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>	
 
-<!-- LOADER================================================== -->
-<script type="text/javascript">
-	(function($) { "use strict";
-		$(window).load(function() {
-			setTimeout(function(){        
-				$('.loader_inner').fadeOut();
-				$('.loader').delay(150).fadeOut('slow'); 
-			}, 1000);
-		});
-	})(jQuery);
-</script> 
-<!-- LOADER================================================== -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/scrolltoid.js"></script> 
