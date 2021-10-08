@@ -520,8 +520,13 @@ body.royal_preloader {
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
 	transition : all 0.3s ease-out;
+	transition: transform 750ms;
+    will-change: transform;
 }
-
+.logo img:hover,
+.logo img:focus {
+	transform: translateY(7px); 
+}
 
 .menu-mobile {
     display: none;
@@ -2211,7 +2216,7 @@ h6:before{
     transition: all 300ms linear;
 }
 .content-in .blog-link:hover{
-	letter-spacing:1px;
+	letter-spacing:2px;
 }
 
 /* Video Hover Image */	
@@ -3039,6 +3044,8 @@ figure.vimeo a img, figure.youtube a img {
 	text-align:right;
 	color:#838D92;
 	padding-bottom:5px;
+	font-size: 13px;
+    line-height: 16px;
 } 
 
 .footer p:hover{
@@ -3048,9 +3055,9 @@ figure.vimeo a img, figure.youtube a img {
 .logo-text-footer{
 	position:relative;
     font-family: 'Roboto', sans-serif;
-	font-size: 17px;
+	font-size: 13px;
 	font-weight: bold;
-	line-height:38px;
+	line-height:24px;
 	text-align:left;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
@@ -3060,6 +3067,9 @@ figure.vimeo a img, figure.youtube a img {
 } 
 .logo-text-footer:hover{
 	opacity:0.7
+}
+.copyright-text{
+	font-size: 13px;
 }
 
 .mail-text-footer{
@@ -4195,10 +4205,28 @@ i.jstree-icon.jstree-themeicon {
 
 .padding-top-bottom.footer {
     padding-bottom: 20px;
+	margin-top: 0 !important;
+	border-top: 1px solid #987033;
 }
-
+.footer div.container {
+    padding-top: 10px;
+}
 .footer div.four.columns {
     margin-top: 0px;
+}
+
+#blogSection {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+#blogH6 {
+	color: #593C0F;
+}	
+p#blogP {
+color: #1B1D19;
+}
+.content-in.blog {
+	background-color: #D3D0CB;
 }
 
 
