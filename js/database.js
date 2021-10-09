@@ -33,7 +33,7 @@ $(document).ready(function() {
         "orderCellsTop": true,
         "select": true,
         "dom": "<'row'<'col-md-6'l><'col-md-6'Bf>>" +
-               "<'row'<'col-md-12't>><'row'<'col-md-12'ip>>",
+               "<'row'<'col-md-12't>><'row'<'col-md-12'rip>>",
         "aLengthMenu": [[25, 50, 100, 250, 500, -1], [25, 50, 100, 250, 500, "Összes"]],
         "oLanguage": {
             "sSearch": "KERESÉS:",
