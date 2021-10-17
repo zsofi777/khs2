@@ -446,17 +446,6 @@
 							}
 						}
 					}),
-					scrollElemToWatch_16 = document.getElementById('rev-44'),
-					watcher_16 = scrollMonitor.create(scrollElemToWatch_16, -100),
-					rev44 = new RevealFx(scrollElemToWatch_16, {
-						revealSettings : {
-							bgcolor: '#838D92',
-							direction: 'rl',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
 					scrollElemToWatch_17 = document.getElementById('rev-45'),
 					watcher_17 = scrollMonitor.create(scrollElemToWatch_17, -300),
 					rev45 = new RevealFx(scrollElemToWatch_17, {
@@ -569,10 +558,6 @@
 				watcher_15.enterViewport(function() {
 					rev43.reveal();
 					watcher_15.destroy();
-				});
-				watcher_16.enterViewport(function() {
-					rev44.reveal();
-					watcher_16.destroy();
 				});
 				watcher_17.enterViewport(function() {
 					rev45.reveal();

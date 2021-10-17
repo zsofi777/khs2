@@ -335,7 +335,7 @@ body.royal_preloader {
 	height:100vh;
 }
 .big-height{
-	height:70vh;
+	height:101vh;
 }
 .half-height{
 	height:50vh;
@@ -1181,6 +1181,7 @@ ul.tabs.light li.current,
 	color:#1B1D19;
 	margin:0 auto;
 	text-align:right;
+	padding-bottom: 4%;
 }
 .page-center-wrap .home-big-text.other-font.font-left{
 	font-size: 45px;
@@ -1834,14 +1835,15 @@ xtype
 
 .left-projects{
 	position:relative;
+	right: 87%;
 	display:inline-block;
 	float:left;
 	text-align:left;
 	color: #1B1D19;
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
-	font-size: 24px; 
-	line-height: 24px;
+	font-size: 20px; 
+	line-height: 20px;
 	overflow:hidden;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
@@ -1849,42 +1851,21 @@ xtype
     -ms-transition: all 300ms linear;
     transition: all 300ms linear;
 }
-.left-projects:before{
-	position:absolute;
-	content:'';
-	background-image:url('../images/icons/left-arrow.png');
-	background-repeat: no-repeat;
-	background-size: 35px 10px;
-	background-position:center center;
-	z-index:2;
-	width:35px;
-	height:10px;
-	left:-35px;
-	top:7px;
-    -webkit-transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -o-transition: all 300ms linear;
-    -ms-transition: all 300ms linear;
-    transition: all 300ms linear;
-}
-.left-projects:hover:before{
-	left:0;
-    -webkit-transition-delay: 200ms;
-    transition-delay: 200ms;
-}
-.left-projects:hover{
-	padding-left:55px;
+#prevNext:hover .left-projects{
+	padding-left:5px;
+	color: #987033;
 }
 .right-projects{
 	position:relative;
+	left: 91%;
 	display:inline-block;
 	float:right;
 	text-align:right;
 	color: #1B1D19;
 	font-family: 'Roboto', sans-serif;
 	font-weight:400;
-	font-size: 24px; 
-	line-height: 24px;
+	font-size: 20px; 
+	line-height: 20px;
 	overflow:hidden;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
@@ -1892,34 +1873,22 @@ xtype
     -ms-transition: all 300ms linear;
     transition: all 300ms linear;
 }
-.right-projects:hover{
-	padding-right:55px;
+#prevNext:hover .right-projects{
+	padding-right:5px;
+	color: #987033;
 }
-.right-projects:before{
-	position:absolute;
-	content:'';
-	background-image:url('../images/icons/right-arrow.png');
-	background-repeat: no-repeat;
-	background-size: 35px 10px;
-	background-position:center center;
-	z-index:2;
-	width:35px;
-	height:10px;
-	right:-35px;
-	top:7px;
-    -webkit-transition: all 300ms linear;
-    -moz-transition: all 300ms linear;
-    -o-transition: all 300ms linear;
-    -ms-transition: all 300ms linear;
-    transition: all 300ms linear;
+#prevNext {
+	transform: translateY(413px);
+	margin-top: 0 !important;
 }
-.right-projects:hover:before{
-	right:0;
-    -webkit-transition-delay: 200ms;
-    transition-delay: 200ms;
+#mapNoTopMargin {
+	margin-top: 0 !important;
+}
+#prevNextImg {
+	width: 120px;
+	margin: -113% -90% 20% -90%;
 }
 
- 
 /* #About
 ================================================== */
  
@@ -2334,7 +2303,7 @@ figure.vimeo a img, figure.youtube a img {
 	font-weight: 600;
 }
 .title-wrapper p.larger{
-	text-align:justify;
+	text-align:right;
 	font-size: 17px;
 	line-height:24px;
 	font-style: italic;
@@ -3809,6 +3778,11 @@ Menu Mobile style's
 	display: block !important;
 	font-size: 24px !important;
 }
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+	.metaTitle {
+		margin-top: 100px;
+	}
+}
 
 .Tree {
 	border: none;
@@ -3998,6 +3972,11 @@ i.jstree-icon.jstree-themeicon {
 .twelve.columns.meta {
 	margin-bottom: -50px;
 }
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+	.twelve.columns.meta {
+		margin-bottom: 0;
+	}
+}
 #metaMenu:hover img {
 	transform: scale(1.1);
 	-webkit-transition : all 0.4s ease-in;
@@ -4010,7 +3989,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-home.aktualitasok {
     background: url(../images/bgAktualitasok.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4021,7 +4000,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.aktualitasok {
     background: url(../images/bgAktualitasok.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4036,7 +4015,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.terkepek {
     background: url(../images/bgTerkepek.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4047,7 +4026,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.terkepek {
     background: url(../images/bgTerkepek.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4062,7 +4041,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.kimutatasok {
     background: url(../images/bgKimutatasok.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4073,7 +4052,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.kimutatasok {
     background: url(../images/bgKimutatasok.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4088,7 +4067,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.meta {
     background: url(../images/bgMeta.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4099,7 +4078,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-project.meta {
     background: url(../images/bgMeta.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4114,7 +4093,7 @@ i.jstree-icon.jstree-themeicon {
 } 
 .parallax-home.gyorsjelentesek {
     background: url(../images/bgGyorsjelentesek.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4125,7 +4104,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-home.tanulmanyok {
     background: url(../images/bgTanulmanyok.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4136,7 +4115,7 @@ i.jstree-icon.jstree-themeicon {
 }
 .parallax-home.index {
     background: url(../images/bgIndex.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -4183,7 +4162,7 @@ i.jstree-icon.jstree-themeicon {
 
 	
 .big-heightAloldal {
-	height: 30vh;
+	height: 20vh;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
@@ -4216,7 +4195,7 @@ i.jstree-icon.jstree-themeicon {
 }
 
 #blogSection {
-	padding-top: 60px;
+	padding-top: 85px;
 	padding-bottom: 50px;
 }
 #blogH6 {
@@ -4229,10 +4208,59 @@ color: #1B1D19;
 	background-color: #D3D0CB;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+	.home-big-text {
+		font-size: 35px !important;
+		letter-spacing: -4px !important;
+		padding-top: 22% !important;
+	}
+	.home-small-text {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+	.title-wrapper.cim {
+		margin-top: 0 !important;
+	}
+	#post-wrapper-my {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+	.larger {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+	#a-my {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+	.post-wrapper p {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+	li {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+	.title-wrapper.cim p {
+		font-size: 12px !important;
+		line-height: 14px !important;
+	}
+}
+* {
+	scroll-behavior: smooth;
+	scroll-padding-top: 110px;
+}
 
-
-
-
-
-
-
+#jumpImg {
+	position: relative;
+	width: 28px;
+	transition: transform 750ms;
+    will-change: transform;
+	padding: 0 0 0 10px;
+}
+#a-my:hover #jumpImg {
+	transform: translateY(5px); 
+}
+#a-my:focus #jumpImg {
+	transform: translateY(5px); 
+}

@@ -35,18 +35,6 @@
 				});
 				rev1.reveal();
 
-				var rev2 = new RevealFx(document.querySelector('#rev-load-2'), {
-					revealSettings : {
-						bgcolor: '#838D92',
-						direction: 'rl',
-						delay: 250,
-						onCover: function(contentEl, revealerEl) {
-							contentEl.style.opacity = 1;
-						}
-					}
-				});
-				rev2.reveal();
-
 
 				//************************ reveal on scroll ********************************
 				

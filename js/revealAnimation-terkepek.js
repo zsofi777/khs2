@@ -49,7 +49,18 @@
 
 				//************************ reveal on scroll ********************************
 
-				var	scrollElemToWatch_1 = document.getElementById('rev-1'),
+				var	scrollElemToWatch_0 = document.getElementById('rev-0'),
+					watcher_0 = scrollMonitor.create(scrollElemToWatch_0, -100),
+					rev0 = new RevealFx(scrollElemToWatch_0, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+				scrollElemToWatch_1 = document.getElementById('rev-1'),
 					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),
 					rev1 = new RevealFx(scrollElemToWatch_1, {
 						revealSettings : {
@@ -1615,7 +1626,10 @@
 						}
 					})
 
-
+				watcher_0.enterViewport(function() {
+					rev0.reveal();
+					watcher_0.destroy();
+				});		
 				watcher_1.enterViewport(function() {
 					rev1.reveal();
 					rev2.reveal();

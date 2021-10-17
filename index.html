@@ -112,7 +112,7 @@
 								<img id="homeImg" src="images/c12.png" alt="">
 							</div>
 							<div class="card-back">
-								<p id="cardTitle">AKTUALITÁSOK</p>
+								<img id="homeImg" src="images/c12b.png" alt="">
 							</div>
 						</div>
 					</a>
@@ -124,7 +124,7 @@
 								<img id="homeImg" src="images/c22.png" alt="">
 							</div>
 							<div class="card-back">
-								<p id="cardTitle">TÉRKÉPEK</p>
+								<img id="homeImg" src="images/c22b.png" alt="">
 							</div>
 						</div>
 					</a>
@@ -136,7 +136,7 @@
 								<img id="homeImg" src="images/c32.png" alt="">
 							</div>
 							<div class="card-back">
-								<p id="cardTitle">KIMUTATÁSOK</p>
+								<img id="homeImg" src="images/c32b.png" alt="">
 							</div>
 						</div>
 					</a>
@@ -148,7 +148,7 @@
 								<img id="homeImg" src="images/c42.png" alt="">
 							</div>
 							<div class="card-back">
-								<p id="cardTitle">META-ADATBÁZIS</p>
+								<img id="homeImg" src="images/c42b.png" alt="">
 							</div>
 						</div>
 					</a>
@@ -160,7 +160,7 @@
 								<img id="homeImg" src="images/c52.png" alt="">
 							</div>
 							<div class="card-back">
-								<p id="cardTitle">GYORSJELENTÉSEK</p>
+								<img id="homeImg" src="images/c52b.png" alt="">
 							</div>
 						</div>
 					</a>
@@ -172,24 +172,25 @@
 								<img id="homeImg" src="images/c62.png" alt="">
 							</div>
 							<div class="card-back">
-								<p id="cardTitle">TANULMÁNYOK</p>
+								<img id="homeImg" src="images/c62b.png" alt="">
 							</div>
 						</div>
 					</a>
 				</div>
 			</div>
 		</div>
+		<div class="container" id="arrow"><a href="#start"><img id="arrowImg" src="images/icons/arr2.png" alt=""></a></div>
+
 	</div>
 
-	<div class="container" id="arrow"><a href="#start"><img id="arrowImg" src="images/icons/arr2.png" alt=""></a></div>
 
 
 
-	<div class="section padding-top-bottom" id="start">
+	<div class="section padding-top-bottom">
 
 		<div class="container">
-			<div class="twelve columns" style="margin-top: 150px;">
-				<div class="title-wrapper cim" id="title-wrapper-my2">
+			<div class="twelve columns" id="start">
+				<div class="title-wrapper cim" id="title-wrapper-my2" style="padding-top: 0; margin-top: 100px;">
 					<div class="title-text-top" id="rev-1">A Kárpát-haza statisztikák küldetése</div>
 					<div class="clear"></div>
 				</div>
@@ -246,7 +247,7 @@
 					</div>
 				</a>	
 			</div>
-			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.9s">
+			<div class="two columns" id="indexMenuCol" data-scroll-reveal="enter bottom move 60px over 0.9s after 0.3s">
 				<a href="terkepek.html">	
 					<div class="team-wrap">
 						<img src="images/icons/2.png" alt="">
@@ -352,6 +353,9 @@
 </html>
 
 <style>
+* {
+scroll-padding-top: 80px;
+}
 body {
 	background: url(images/kezdolapBg.png) !important;
     background-position: center !important;
@@ -359,20 +363,22 @@ body {
     background-repeat: no-repeat !important;
 }	
 .big-height {
-    height: 78vh;
+    height: 88vh;
 }
 .six.columns {
-	width: 752px !important;
-    margin: 8% auto;
+	width: 1268.38px !important;
+    margin: auto;
+    margin-top: 11%;
+    margin-bottom: 2%;
     float: none;
     display: flex;
 }
 .card {
   background-color: transparent;
-  width: 107px;
+  width: 186.09px;
   perspective: 1000px;
   margin: auto;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 30px;
   writing-mode: vertical-rl;
@@ -396,33 +402,21 @@ body {
   backface-visibility: hidden;
 }
 .card1 .card-back {
-  background-color: #4B7793;
-  color: #ECE7DD;
   transform: rotateY(180deg);
 }
 .card2 .card-back {
-  background-color: #593C0F;
-  color: #ECE7DD;
   transform: rotateY(180deg);
 }
 .card3 .card-back {
-  background-color: #838D92;
-  color: #ECE7DD;
   transform: rotateY(180deg);
 }
 .card4 .card-back {
-  background-color: #987033;
-  color: #ECE7DD;
   transform: rotateY(180deg);
 }
 .card5 .card-back {
-  background-color: #353C44;
-  color: #ECE7DD;
   transform: rotateY(180deg);
 }
 .card6 .card-back {
-  background-color: #1B1D19;
-  color: #ECE7DD;
   transform: rotateY(180deg);
 }
 #cardTitle {
@@ -431,40 +425,40 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 0;
+	height: 500px;
+	font-size: 40px;
 }
 .card1 {
-    height: 240px;
-	padding-top: 8%;
+    height: 330.74px;
+	padding-top: 11%;
 }
 .card2 {
-    height: 347px;
-	padding-top: 2%;
+    height: 477.92px;
+	padding-top: 5%;
 }
 .card3 {
-    height: 580px;
+    height: 800px;
+	padding-top: 2%;
 }
 .card4 {
-    height: 522px;
+    height: 720.35px;
 	padding-top: 2%;
 }
 .card5 {
-    height: 388px;
+    height: 535.06px;
 }
 .card6 {
-    height: 270px;
-	padding-top: 15.7%;
+    height: 372.29px;
+	padding-top: 13%;
 }
 img#homeImg {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 0;
-}
-.two.columns {
-	margin-top: 150px;
 }
 
 .section.padding-top-bottom {
@@ -476,6 +470,7 @@ img#homeImg {
 }
 #arrow {
 	text-align: center;
+	padding: 20px;
 }
 #arrowImg {
 	position: relative;
@@ -488,17 +483,19 @@ img#homeImg {
 	transform: translateY(10px); 
 }
 
-
 @media only screen and (min-width: 300px) and (max-width: 700px) {
+	.big-height {
+		height: 46vh;
+	}
 	.six.columns {
-		margin: 40% -12%;
+		margin: 35% -6% 0;
 		float: none;
 		display: flex;
 		width: 290px !important;
 	}
 	.card {
 		background-color: transparent;
-		width: 49px;
+		width: 44px;
 		height: 150px;
 		perspective: 1000px;
 		margin: auto 2%;
@@ -508,26 +505,33 @@ img#homeImg {
 		writing-mode: vertical-rl;
 	}
 	.card1 {
-		height: 130px;
+		height: 77px;
 	}
 	.card2 {
-		height: 170px;
+		height: 112px;
 	}
 	.card3 {
-		height: 250px;
+		height: 187px;
 	}
 	.card4 {
-		height: 215px;
+		height: 169px;
 	}
 	.card5 {
-		height: 185px;
+		height: 125px;
 	}
 	.card6 {
-		height: 155px;
-		padding-top: 7%;
+		height: 87px;
 	}
 	.two.columns {
 		margin-top: 75px;
+	}
+	.team-wrap img {
+    margin: 15px auto;
+}
+}
+@media only screen and (min-width: 1200px) {
+	.big-height {
+		height: 100%;
 	}
 }
 </style>
