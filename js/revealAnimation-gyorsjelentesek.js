@@ -96,6 +96,18 @@
 								contentEl.style.opacity = 1;
 							}
 						}
+					}),
+
+					scrollElemToWatch_6 = document.getElementById('rev-6'),
+					watcher_6 = scrollMonitor.create(scrollElemToWatch_6, -300),				
+					rev6 = new RevealFx(scrollElemToWatch_6, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
 					})
 					
 				watcher_1.enterViewport(function() {
@@ -117,6 +129,10 @@
 				watcher_5.enterViewport(function() {
 					rev5.reveal();
 					watcher_5.destroy();
+				});
+				watcher_6.enterViewport(function() {
+					rev6.reveal();
+					watcher_6.destroy();
 				});
 			}
 		})();

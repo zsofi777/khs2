@@ -132,6 +132,30 @@
 								contentEl.style.opacity = 1;
 							}
 						}
+					}),
+
+					scrollElemToWatch_9 = document.getElementById('rev-9'),
+					watcher_9 = scrollMonitor.create(scrollElemToWatch_9, -300),				
+					rev9 = new RevealFx(scrollElemToWatch_9, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+
+					scrollElemToWatch_10 = document.getElementById('rev-10'),
+					watcher_10 = scrollMonitor.create(scrollElemToWatch_10, -300),				
+					rev10 = new RevealFx(scrollElemToWatch_10, {
+						revealSettings : {
+							bgcolor: '#987033',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
 					})
 					
 				watcher_1.enterViewport(function() {
@@ -165,6 +189,14 @@
 				watcher_8.enterViewport(function() {
 					rev8.reveal();
 					watcher_8.destroy();
+				});
+				watcher_9.enterViewport(function() {
+					rev9.reveal();
+					watcher_9.destroy();
+				});
+				watcher_10.enterViewport(function() {
+					rev10.reveal();
+					watcher_10.destroy();
 				});
 			}
 		})();

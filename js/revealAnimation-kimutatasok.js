@@ -436,7 +436,7 @@
 						}
 					}),
 					scrollElemToWatch_15 = document.getElementById('rev-43'),
-					watcher_15 = scrollMonitor.create(scrollElemToWatch_15, -100),
+					watcher_15 = scrollMonitor.create(scrollElemToWatch_15, -300),
 					rev43 = new RevealFx(scrollElemToWatch_15, {
 						revealSettings : {
 							bgcolor: '#838D92',
@@ -446,9 +446,27 @@
 							}
 						}
 					}),
-					scrollElemToWatch_17 = document.getElementById('rev-45'),
-					watcher_17 = scrollMonitor.create(scrollElemToWatch_17, -300),
-					rev45 = new RevealFx(scrollElemToWatch_17, {
+					rev44 = new RevealFx(document.querySelector('#rev-44'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 250,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev45 = new RevealFx(document.querySelector('#rev-45'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_16 = document.getElementById('rev-46'),
+					watcher_16 = scrollMonitor.create(scrollElemToWatch_16, -300),
+					rev46 = new RevealFx(scrollElemToWatch_16, {
 						revealSettings : {
 							bgcolor: '#838D92',
 							direction: 'rl',
@@ -457,16 +475,49 @@
 							}
 						}
 					}),
-					rev46 = new RevealFx(document.querySelector('#rev-46'), {
+					scrollElemToWatch_17 = document.getElementById('rev-47'),
+					watcher_17 = scrollMonitor.create(scrollElemToWatch_17, -200),
+					rev47 = new RevealFx(scrollElemToWatch_17, {
 						revealSettings : {
-							bgcolor: '#4B7793',
-							delay: 500,
+							bgcolor: '#838D92',
+							direction: 'rl',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
 							}
 						}
 					}),
-					rev47 = new RevealFx(document.querySelector('#rev-47'), {
+					scrollElemToWatch_18 = document.getElementById('rev-48'),
+					watcher_18 = scrollMonitor.create(scrollElemToWatch_18, -200),
+					rev48 = new RevealFx(scrollElemToWatch_18, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_19 = document.getElementById('rev-49'),
+					watcher_19 = scrollMonitor.create(scrollElemToWatch_19, -300),
+					rev49 = new RevealFx(scrollElemToWatch_19, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev50 = new RevealFx(document.querySelector('#rev-50'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 250,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev51 = new RevealFx(document.querySelector('#rev-51'), {
 						revealSettings : {
 							bgcolor: '#B79B70',
 							delay: 500,
@@ -474,8 +525,30 @@
 								contentEl.style.opacity = 1;
 							}
 						}
+					}),
+					scrollElemToWatch_20 = document.getElementById('rev-52'),
+					watcher_20 = scrollMonitor.create(scrollElemToWatch_20, -300),
+					rev52 = new RevealFx(scrollElemToWatch_20, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_21 = document.getElementById('rev-53'),
+					watcher_21 = scrollMonitor.create(scrollElemToWatch_21, -300),
+					rev53 = new RevealFx(scrollElemToWatch_21, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
 					})
-
+					
 
 				watcher_2.enterViewport(function() {
 					rev4.reveal();
@@ -557,14 +630,36 @@
 				});
 				watcher_15.enterViewport(function() {
 					rev43.reveal();
-					watcher_15.destroy();
-				});
-				watcher_17.enterViewport(function() {
+					rev44.reveal();
 					rev45.reveal();
+					watcher_15.destroy();
+				});	
+				watcher_16.enterViewport(function() {
 					rev46.reveal();
+					watcher_16.destroy();
+				});	
+				watcher_17.enterViewport(function() {
 					rev47.reveal();
 					watcher_17.destroy();
-				});				
+				});	
+				watcher_18.enterViewport(function() {
+					rev48.reveal();
+					watcher_18.destroy();
+				});	
+				watcher_19.enterViewport(function() {
+					rev49.reveal();
+					rev50.reveal();
+					rev51.reveal();
+					watcher_19.destroy();
+				});
+				watcher_20.enterViewport(function() {
+					rev52.reveal();
+					watcher_20.destroy();
+				});	
+				watcher_21.enterViewport(function() {
+					rev53.reveal();
+					watcher_21.destroy();
+				});	
 			}
 		})();
 		
