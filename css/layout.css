@@ -4264,3 +4264,15 @@ color: #1B1D19;
 #a-my:focus #jumpImg {
 	transform: translateY(5px); 
 }
+
+#metaCim {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -6.5px;
+	line-height: 50px;
+    margin: 0 auto;
+    color: #4B7793;
+}
+#metaAlCim {
+    font-weight: 600;
+}
