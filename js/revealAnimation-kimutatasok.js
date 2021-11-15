@@ -547,6 +547,57 @@
 								contentEl.style.opacity = 1;
 							}
 						}
+					}),
+					scrollElemToWatch_22 = document.getElementById('rev-54'),
+					watcher_22 = scrollMonitor.create(scrollElemToWatch_22, -300),
+					rev54 = new RevealFx(scrollElemToWatch_22, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_23 = document.getElementById('rev-55'),
+					watcher_23 = scrollMonitor.create(scrollElemToWatch_23, -300),
+					rev55 = new RevealFx(scrollElemToWatch_23, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_24 = document.getElementById('rev-56'),
+					watcher_24 = scrollMonitor.create(scrollElemToWatch_24, -300),
+					rev56 = new RevealFx(scrollElemToWatch_24, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev57 = new RevealFx(document.querySelector('#rev-57'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 250,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev58 = new RevealFx(document.querySelector('#rev-58'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
 					})
 					
 
@@ -659,6 +710,20 @@
 				watcher_21.enterViewport(function() {
 					rev53.reveal();
 					watcher_21.destroy();
+				});	
+				watcher_22.enterViewport(function() {
+					rev54.reveal();
+					watcher_22.destroy();
+				});	
+				watcher_23.enterViewport(function() {
+					rev55.reveal();
+					watcher_23.destroy();
+				});	
+				watcher_24.enterViewport(function() {
+					rev56.reveal();
+					rev57.reveal();
+					rev58.reveal();
+					watcher_24.destroy();
 				});	
 			}
 		})();

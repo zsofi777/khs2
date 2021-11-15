@@ -1624,7 +1624,96 @@
 								contentEl.style.opacity = 1;
 							}
 						}
+					}),
+
+					scrollElemToWatch_55 = document.getElementById('rev-994'),
+					watcher_55 = scrollMonitor.create(scrollElemToWatch_55, -300),
+					rev994 = new RevealFx(scrollElemToWatch_55, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev995 = new RevealFx(document.querySelector('#rev-995'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev996 = new RevealFx(document.querySelector('#rev-996'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_56 = document.getElementById('rev-997'),
+					watcher_56 = scrollMonitor.create(scrollElemToWatch_56, -300),
+					rev997 = new RevealFx(scrollElemToWatch_56, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev998 = new RevealFx(document.querySelector('#rev-998'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev999 = new RevealFx(document.querySelector('#rev-999'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_57 = document.getElementById('rev-1000'),
+					watcher_57 = scrollMonitor.create(scrollElemToWatch_57, -300),
+					rev1000 = new RevealFx(scrollElemToWatch_57, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev1001 = new RevealFx(document.querySelector('#rev-1001'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev1002 = new RevealFx(document.querySelector('#rev-1002'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
 					})
+
 
 				watcher_0.enterViewport(function() {
 					rev0.reveal();
@@ -1947,7 +2036,25 @@
 				watcher_54.enterViewport(function() {
 					rev993.reveal();
 					watcher_54.destroy();
-				});				
+				});	
+				watcher_55.enterViewport(function() {
+					rev994.reveal();
+					rev995.reveal();
+					rev996.reveal();
+					watcher_55.destroy();
+				});	
+				watcher_56.enterViewport(function() {
+					rev997.reveal();
+					rev998.reveal();
+					rev999.reveal();
+					watcher_56.destroy();
+				});	
+				watcher_57.enterViewport(function() {
+					rev1000.reveal();
+					rev1001.reveal();
+					rev1002.reveal();
+					watcher_57.destroy();
+				});			
 			}
 		})();
 		
