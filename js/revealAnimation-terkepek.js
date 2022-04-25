@@ -1459,15 +1459,6 @@
 							}
 						}
 					}),
-					rev141 = new RevealFx(document.querySelector('#rev-141'), {
-						revealSettings : {
-							bgcolor: '#B79B70',
-							delay: 500,
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
 
 					scrollElemToWatch_48 = document.getElementById('rev-142'),
 					watcher_48 = scrollMonitor.create(scrollElemToWatch_48, -300),
@@ -1475,15 +1466,6 @@
 						revealSettings : {
 							bgcolor: '#838D92',
 							direction: 'rl',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
-					rev143 = new RevealFx(document.querySelector('#rev-143'), {
-						revealSettings : {
-							bgcolor: '#4B7793',
-							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
 							}
@@ -1510,15 +1492,6 @@
 							}
 						}
 					}),
-					rev146 = new RevealFx(document.querySelector('#rev-146'), {
-						revealSettings : {
-							bgcolor: '#4B7793',
-							delay: 500,
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
 					rev147 = new RevealFx(document.querySelector('#rev-147'), {
 						revealSettings : {
 							bgcolor: '#B79B70',
@@ -1540,15 +1513,6 @@
 							}
 						}
 					}),
-					rev149 = new RevealFx(document.querySelector('#rev-149'), {
-						revealSettings : {
-							bgcolor: '#4B7793',
-							delay: 500,
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
 					rev150 = new RevealFx(document.querySelector('#rev-150'), {
 						revealSettings : {
 							bgcolor: '#B79B70',
@@ -1565,15 +1529,6 @@
 						revealSettings : {
 							bgcolor: '#838D92',
 							direction: 'rl',
-							onCover: function(contentEl, revealerEl) {
-								contentEl.style.opacity = 1;
-							}
-						}
-					}),
-					rev152 = new RevealFx(document.querySelector('#rev-152'), {
-						revealSettings : {
-							bgcolor: '#4B7793',
-							delay: 500,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
 							}
@@ -1624,7 +1579,87 @@
 								contentEl.style.opacity = 1;
 							}
 						}
+					}),
+
+					scrollElemToWatch_55 = document.getElementById('rev-994'),
+					watcher_55 = scrollMonitor.create(scrollElemToWatch_55, -300),
+					rev994 = new RevealFx(scrollElemToWatch_55, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev996 = new RevealFx(document.querySelector('#rev-996'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_56 = document.getElementById('rev-997'),
+					watcher_56 = scrollMonitor.create(scrollElemToWatch_56, -300),
+					rev997 = new RevealFx(scrollElemToWatch_56, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev998 = new RevealFx(document.querySelector('#rev-998'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev999 = new RevealFx(document.querySelector('#rev-999'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					scrollElemToWatch_57 = document.getElementById('rev-1000'),
+					watcher_57 = scrollMonitor.create(scrollElemToWatch_57, -300),
+					rev1000 = new RevealFx(scrollElemToWatch_57, {
+						revealSettings : {
+							bgcolor: '#838D92',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev1001 = new RevealFx(document.querySelector('#rev-1001'), {
+						revealSettings : {
+							bgcolor: '#4B7793',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev1002 = new RevealFx(document.querySelector('#rev-1002'), {
+						revealSettings : {
+							bgcolor: '#B79B70',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
 					})
+
 
 				watcher_0.enterViewport(function() {
 					rev0.reveal();
@@ -1909,30 +1944,25 @@
 				watcher_47.enterViewport(function() {
 					rev139.reveal();
 					rev140.reveal();
-					rev141.reveal();
 					watcher_47.destroy();
 				});
 				watcher_48.enterViewport(function() {
 					rev142.reveal();
-					rev143.reveal();
 					rev144.reveal();
 					watcher_48.destroy();
 				});
 				watcher_49.enterViewport(function() {
 					rev145.reveal();
-					rev146.reveal();
 					rev147.reveal();
 					watcher_49.destroy();
 				});
 				watcher_50.enterViewport(function() {
 					rev148.reveal();
-					rev149.reveal();
 					rev150.reveal();
 					watcher_50.destroy();
 				});
 				watcher_51.enterViewport(function() {
 					rev151.reveal();
-					rev152.reveal();
 					rev153.reveal();
 					watcher_51.destroy();
 				});
@@ -1947,7 +1977,24 @@
 				watcher_54.enterViewport(function() {
 					rev993.reveal();
 					watcher_54.destroy();
-				});				
+				});	
+				watcher_55.enterViewport(function() {
+					rev994.reveal();
+					rev996.reveal();
+					watcher_55.destroy();
+				});	
+				watcher_56.enterViewport(function() {
+					rev997.reveal();
+					rev998.reveal();
+					rev999.reveal();
+					watcher_56.destroy();
+				});	
+				watcher_57.enterViewport(function() {
+					rev1000.reveal();
+					rev1001.reveal();
+					rev1002.reveal();
+					watcher_57.destroy();
+				});			
 			}
 		})();
 		

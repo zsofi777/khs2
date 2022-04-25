@@ -1835,7 +1835,7 @@ xtype
 
 .left-projects{
 	position:relative;
-	right: 87%;
+	right: 50%;
 	display:inline-block;
 	float:left;
 	text-align:left;
@@ -1857,7 +1857,7 @@ xtype
 }
 .right-projects{
 	position:relative;
-	left: 91%;
+	left: 75%;
 	display:inline-block;
 	float:right;
 	text-align:right;
@@ -1879,14 +1879,39 @@ xtype
 }
 #prevNext {
 	transform: translateY(413px);
-	margin-top: 0 !important;
+	margin-top: -28px !important;
 }
 #mapNoTopMargin {
 	margin-top: 0 !important;
 }
 #prevNextImg {
 	width: 120px;
-	margin: -113% -90% 20% -90%;
+	height: 90px;;
+	margin: 30% -90% 6% -90%;
+}
+.projectsTitleLeft {
+	position: relative;
+    right: 136%;
+    display: inline-block;
+	color: #1B1D19;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    width: 175px;
+	text-align: center;
+}
+.projectsTitleRight {
+	position: relative;
+    left: -54%;
+    display: inline-block;
+	color: #1B1D19;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    width: 175px;
+	text-align: center;
 }
 
 /* #About
@@ -4162,12 +4187,12 @@ i.jstree-icon.jstree-themeicon {
 
 	
 .big-heightAloldal {
-	height: 20vh;
+	height: 17vh;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
 	.big-heightAloldal {
-		height: 20vh;
+		height: 17vh;
 	}
 	.logo-text-footer {
 		font-size: 14px;
